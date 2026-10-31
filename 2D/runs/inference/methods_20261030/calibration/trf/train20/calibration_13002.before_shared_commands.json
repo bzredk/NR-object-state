@@ -1,0 +1,307 @@
+{
+  "parent": "calibration_13002",
+  "candidate": {
+    "name": "train20",
+    "max_nfev": 20,
+    "regularization": 0.0,
+    "initial": "train_mean"
+  },
+  "rows": [
+    {
+      "window": "0.0",
+      "channels": "basic",
+      "force_rmse_mN": 4.803267720130863,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.009753477992489934,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.2322432074305445,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.0",
+      "channels": "lateral",
+      "force_rmse_mN": 1.2569510909332549,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.06232789502246305,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 5,
+      "njev": 5,
+      "optimality": 2.524431131913859e-14,
+      "cost": 0.5626310563648057,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.06434658173394935,
+        0.3243909718424674,
+        0.054645898767962865,
+        0.07015709219974406,
+        0.37398115477005706,
+        0.05559780256906007
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.2",
+      "channels": "basic",
+      "force_rmse_mN": 4.790987773566776,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.1750696719973348,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.6416027757719066,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.2",
+      "channels": "lateral",
+      "force_rmse_mN": 3.0321606061730106,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 1.3501802679966204,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 6,
+      "njev": 6,
+      "optimality": 7.024981765290403e-08,
+      "cost": 1.5092389716301788,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.044504695589393774,
+        0.26966226420786027,
+        0.046150259427027725,
+        0.07615234517458115,
+        0.4096895656759003,
+        0.07256320665792451
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.8",
+      "channels": "basic",
+      "force_rmse_mN": 0.11534134146882924,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 7.3864350150106475,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 9,
+      "njev": 9,
+      "optimality": 2.3111523567996557e-08,
+      "cost": 0.5529953463457432,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        2.499999998267868,
+        0.215925411156026,
+        5.886309026199979e-07,
+        0.22592689523057546,
+        0.04044902108735596,
+        0.11052666444262196
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.8",
+      "channels": "lateral",
+      "force_rmse_mN": 0.11796076423713141,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 9.863835692987777,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 12,
+      "njev": 12,
+      "optimality": 6.741101470389957e-05,
+      "cost": 1.6960007770194934,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        2.499999967149075,
+        0.20022784476178906,
+        9.183604188695466e-09,
+        6.835230380152769e-12,
+        0.2653495069184865,
+        0.020701420285386553
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "contact",
+      "channels": "basic",
+      "force_rmse_mN": 0.28765273042553213,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 2.8804123390000314,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 11,
+      "njev": 11,
+      "optimality": 1.1828337652151584e-05,
+      "cost": 0.720967820586946,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        9.769167635781617e-13,
+        7.878875138405737e-09,
+        0.5923819026697036,
+        0.3854518600174587,
+        0.22808992195936123,
+        0.029320196852551675
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "contact",
+      "channels": "lateral",
+      "force_rmse_mN": 0.027749156618114165,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.4790918540093116,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 13,
+      "njev": 13,
+      "optimality": 5.853977582492363e-09,
+      "cost": 1.9547567018688934,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        1.6726293549152202,
+        0.5071309193448928,
+        2.4761301485551763e-10,
+        2.8192522019955017e-09,
+        0.3912713807857042,
+        1.7038096843832143e-10
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    }
+  ]
+}

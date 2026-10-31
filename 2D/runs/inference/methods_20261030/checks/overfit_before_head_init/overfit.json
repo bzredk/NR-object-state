@@ -1,0 +1,32 @@
+{
+  "gru": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 96,
+    "constant_coefficient_baseline_mse": 0.011234351433813572,
+    "best_mse": 0.0035883216187357903,
+    "best_epoch": 199,
+    "wall_seconds": 8.86285745195346,
+    "ratio_to_constant": 0.3194062104854158
+  },
+  "rme": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 96,
+    "constant_coefficient_baseline_mse": 0.011234351433813572,
+    "best_mse": 0.09885407984256744,
+    "best_epoch": 2,
+    "wall_seconds": 25.993252489017323,
+    "ratio_to_constant": 8.79926895868975
+  },
+  "mlp": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 24,
+    "constant_coefficient_baseline_mse": 0.0005186827038414776,
+    "best_mse": 0.000645683438051492,
+    "best_epoch": 199,
+    "wall_seconds": 0.36012293997919187,
+    "ratio_to_constant": 1.2448524565585455
+  }
+}

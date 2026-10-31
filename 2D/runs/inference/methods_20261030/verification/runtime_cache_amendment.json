@@ -1,0 +1,36 @@
+{
+  "reason": "Full future-field cache grew toward container memory limit; bound exact-cache entries16, no model/loss/data/analysis change. Initialfrozen.json andsource preserved. No completed final-test job or inspected final metric preceded amendment.",
+  "utc_unix": 1793406074.2854228,
+  "effective_source_sha256": {
+    "__init__.py": "f21b01a5e4f6428eb3ccee4252277a9aa8a757ff76505835db6c7767421d71db",
+    "checks.py": "816180e1cc3951399bb75279724814f80c101e174fff62f9e9a74056adaf480f",
+    "cli.py": "ff1cb7c433cf53e42acb7f448f75e4abe155072e69c2aa15797b34d120719a29",
+    "estimators.py": "dd67e5e14ee0977a4eb089f3eb7c2e21ba2c6e15e5225a98b2136bcea316dd53",
+    "experiments.py": "9a70b2603ae36c49adce46dc0c92190069edfc52acf0d5104801d24d7c75c34b",
+    "inference_analysis.py": "1f93c7ac791b0683df54babc6c772437474ebf4a3c3320c21370d4926c077f26",
+    "inference_controls.py": "59e6bdf82d60838e2e96c1cd1b426a2ddde73ac7933f913b82826ca1bd0a2d9e",
+    "inference_data.py": "477f3ce04d848f88252a0f8f06f972d58837f576c9dffd7a7b11670174c178d8",
+    "inference_display.py": "35aa8e5be5f7369686d9082b9040211068e034bd3ded70c6310eba0cc610811f",
+    "inference_physics.py": "447652babd595f9d572d753bb5817164f617c6ca37151555376d84808162831a",
+    "inference_study.py": "4749de4140f46dc6533b80b0c3af0f54118b61041cbec6d1b89ab9f4fce24bb3",
+    "information.py": "c10029b0d01dc6cbcba109512dee45ca80ae22f05b8579464780712812b5c996",
+    "learning_models.py": "0c181d29c4d6a928a265d909a205bba43518d59a055e5fd74d69c70eedf860c5",
+    "physics.py": "3d64e0696aa4c0637f1e35723888b024bc7f75ef2d6c4650b5132344fb92f10e",
+    "plotting.py": "5b4942aee9ae4edeae007ae754221f61ed57589b7179d124418fbebc4c4ee744",
+    "protocols.py": "c99ec8b332f552e0b5fa8c205b4d35dda57605f82c1722d95a7d5921f148e6fd",
+    "variational.py": "ad3ec8167fcd4369ff2b72314bc10fc4267b6fe6bf434c5c63cd9ef17ed4123d",
+    "widgets.py": "06c8b9344a819efd3dbdb58bdea7cf60f883e4003bb667a8c0a4419ebae6e9ad"
+  },
+  "cache_entries_after_eviction": 16,
+  "bitwise_cached_vs_uncached": {
+    "force": true,
+    "u": true,
+    "z": true,
+    "d": true,
+    "v": true,
+    "markers": true
+  },
+  "passed": true,
+  "source_diff": "--- initial-frozen\n+++ bounded-cache\n@@ -112,7 +112,10 @@\n     if model._cache_forecasts and key in model._forecast_cache:\n         return model._forecast_cache[key]\n     future=model.simulate(command, phase, state=state)\n-    if model._cache_forecasts:model._forecast_cache[key]=future\n+    if model._cache_forecasts:\n+        if len(model._forecast_cache)>=16:\n+            model._forecast_cache.pop(next(iter(model._forecast_cache)))\n+        model._forecast_cache[key]=future\n     return future\n \n \n@@ -503,12 +506,14 @@\n     # Across methods a command is fixed; across futures a fitted state is fixed.\n     command_groups={};state_groups={};noise_groups={};noise_seeds={};source_changes=[]\n     frozen=read_json(run/'frozen.json') if (run/'frozen.json').exists() else None\n+    amendment=run/'verification/runtime_cache_amendment.json'\n+    expected_code=read_json(amendment)['effective_source_sha256'] if amendment.exists() else (frozen['code']['source_sha256'] if frozen else {})\n     numeric=('physics.py','protocols.py','estimators.py','inference_physics.py','inference_study.py','inference_data.py','learning_models.py','variational.py')\n     for path in (run/'evaluation').rglob('result.json'):\n         result=read_json(path)\n         if frozen and result['split']=='test':\n             source_changes.extend([str(path)+':'+name for name in numeric\n-                                   if result.get('source_sha256',{}).get(name)!=frozen['code']['source_sha256'][name]])\n+                                   if result.get('source_sha256',{}).get(name)!=expected_code[name]])\n         for row in result['rows']:\n             common=(row['split'],row['history_id'],row['noise_repeat'])\n             noise_seeds[common]=row['noise_seed']\n",
+  "completed_test_jobs_at_amendment": 0
+}

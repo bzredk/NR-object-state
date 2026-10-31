@@ -1,0 +1,1144 @@
+{
+  "history_id": "pilot_14000",
+  "split": "pilot",
+  "noise_repeat": 0,
+  "noise_seed": 1580548654,
+  "settings": {
+    "name": "prior10",
+    "max_nfev": 60,
+    "regularization": 1.0,
+    "initial": "train_mean"
+  },
+  "draft_settings": false,
+  "observation_sha256": "e52f54cd527d0a0ff7c55c30237386f895d3751853a3287c4e52904ac1537d6d",
+  "future_command_sha256": "717ef7965810d6b7b6dd6247380d49880a33ee164162bfa7493ac46205bdf7c3",
+  "future_command_source": "generated once from the true checkpoint; identical for every method",
+  "rows": [
+    {
+      "channels": "basic",
+      "update": "none",
+      "force_rmse_mN": 0.7694868174971397,
+      "improvement_vs_no_update_mN": 0.0,
+      "marker_rmse_um": 0.17748289083708174,
+      "coefficients_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": null,
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "observation_channels": [],
+        "observation_update_samples": 0
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/basic_motion.npz",
+      "fit": {
+        "fit_seconds": 0.0,
+        "optimizer_status": "not_used"
+      },
+      "replay_seconds": 0.693662089004647,
+      "prediction_seconds": 0.5414963430375792,
+      "state_sha256": "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/basic_none.npz"
+    },
+    {
+      "channels": "basic",
+      "update": "current",
+      "force_rmse_mN": 0.7694868174971397,
+      "improvement_vs_no_update_mN": 0.0,
+      "marker_rmse_um": 0.17748289083708174,
+      "coefficients_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.400000000000001,
+          1.400000000000001
+        ],
+        "observation_update_samples": 1,
+        "observation_channels": [
+          2
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/basic_motion.npz",
+      "fit": {
+        "encode_seconds": 0.0,
+        "vi_seconds": 0.0,
+        "fit_seconds": 0.9182146969833411,
+        "optimizer_status": "1",
+        "optimizer_success": true,
+        "nfev": 1,
+        "njev": 1,
+        "optimality": 0.0,
+        "cost": 1.9325993992694839,
+        "coefficient_start": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "coefficients": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "settings": {
+          "name": "prior10",
+          "max_nfev": 60,
+          "regularization": 1.0,
+          "initial": "train_mean"
+        },
+        "gradient": "implicit exact-FEM Jacobian"
+      },
+      "replay_seconds": 0.6331496460479684,
+      "prediction_seconds": 0.5138381160213612,
+      "state_sha256": "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/basic_current.npz"
+    },
+    {
+      "channels": "basic",
+      "update": "recent_0.2",
+      "force_rmse_mN": 0.7694868174971397,
+      "improvement_vs_no_update_mN": 0.0,
+      "marker_rmse_um": 0.17748289083708174,
+      "coefficients_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.2000000000000008,
+          1.400000000000001
+        ],
+        "observation_update_samples": 21,
+        "observation_channels": [
+          2
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/basic_motion.npz",
+      "fit": {
+        "encode_seconds": 0.0,
+        "vi_seconds": 0.0,
+        "fit_seconds": 0.8966609620256349,
+        "optimizer_status": "1",
+        "optimizer_success": true,
+        "nfev": 1,
+        "njev": 1,
+        "optimality": 0.0,
+        "cost": 0.5585596567026332,
+        "coefficient_start": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "coefficients": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "settings": {
+          "name": "prior10",
+          "max_nfev": 60,
+          "regularization": 1.0,
+          "initial": "train_mean"
+        },
+        "gradient": "implicit exact-FEM Jacobian"
+      },
+      "replay_seconds": 0.59600539697567,
+      "prediction_seconds": 0.5394899969687685,
+      "state_sha256": "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/basic_recent_0.2.npz"
+    },
+    {
+      "channels": "lateral",
+      "update": "none",
+      "force_rmse_mN": 0.7694868174971397,
+      "improvement_vs_no_update_mN": 0.0,
+      "marker_rmse_um": 0.17748289083708174,
+      "coefficients_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": null,
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "observation_channels": [],
+        "observation_update_samples": 0
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/lateral_motion.npz",
+      "fit": {
+        "fit_seconds": 0.0,
+        "optimizer_status": "not_used"
+      },
+      "replay_seconds": 0.5492477220250294,
+      "prediction_seconds": 0.5734079210087657,
+      "state_sha256": "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/lateral_none.npz"
+    },
+    {
+      "channels": "lateral",
+      "update": "current",
+      "force_rmse_mN": 0.8051439107805715,
+      "improvement_vs_no_update_mN": -0.03565709328343181,
+      "marker_rmse_um": 0.14753941115879202,
+      "coefficients_at_common_anchor": [
+        0.12625020227518582,
+        0.7893349925568892,
+        0.090871496282869,
+        0.0818133332338706,
+        0.2746625636228651,
+        0.0077513286982811656
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.400000000000001,
+          1.400000000000001
+        ],
+        "observation_update_samples": 1,
+        "observation_channels": [
+          2,
+          3,
+          4
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/lateral_motion.npz",
+      "fit": {
+        "encode_seconds": 0.0,
+        "vi_seconds": 0.0,
+        "fit_seconds": 6.5181470299721695,
+        "optimizer_status": "1",
+        "optimizer_success": true,
+        "nfev": 7,
+        "njev": 7,
+        "optimality": 5.544541917668104e-11,
+        "cost": 2.2527772625007914,
+        "coefficient_start": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "coefficients": [
+          0.12625020227518582,
+          0.7893349925568892,
+          0.090871496282869,
+          0.0818133332338706,
+          0.2746625636228651,
+          0.0077513286982811656
+        ],
+        "settings": {
+          "name": "prior10",
+          "max_nfev": 60,
+          "regularization": 1.0,
+          "initial": "train_mean"
+        },
+        "gradient": "implicit exact-FEM Jacobian"
+      },
+      "replay_seconds": 0.5848106989869848,
+      "prediction_seconds": 0.6138781239860691,
+      "state_sha256": "1f49ec3e6065cf3fbe0a96b81337491eed719c2f9408ff260ad1310b38afcf7c",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/lateral_current.npz"
+    },
+    {
+      "channels": "lateral",
+      "update": "recent_0.2",
+      "force_rmse_mN": 0.056175505220116384,
+      "improvement_vs_no_update_mN": 0.7133113122770233,
+      "marker_rmse_um": 0.01609287560126135,
+      "coefficients_at_common_anchor": [
+        0.12633628311295783,
+        0.789725928352009,
+        0.09204804647039155,
+        0.08363976547385898,
+        0.2828477669412328,
+        0.014661721984777129
+      ],
+      "prior_at_common_anchor": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "prior_source": "training projected coefficients at 0.8-second window start",
+      "inputs": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.2000000000000008,
+          1.400000000000001
+        ],
+        "observation_update_samples": 21,
+        "observation_channels": [
+          2,
+          3,
+          4
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "motion_record": "controls/common_anchor/pilot_14000/repeat_0/lateral_motion.npz",
+      "fit": {
+        "encode_seconds": 0.0,
+        "vi_seconds": 0.0,
+        "fit_seconds": 6.325750591000542,
+        "optimizer_status": "2",
+        "optimizer_success": true,
+        "nfev": 5,
+        "njev": 5,
+        "optimality": 2.2209249772870668e-07,
+        "cost": 1.6732898615673577,
+        "coefficient_start": [
+          0.12643727357408352,
+          0.7901843371801078,
+          0.09340749052888508,
+          0.08560957087183851,
+          0.29167679918464273,
+          0.02211780884424641
+        ],
+        "coefficients": [
+          0.12633628311295783,
+          0.789725928352009,
+          0.09204804647039155,
+          0.08363976547385898,
+          0.2828477669412328,
+          0.014661721984777129
+        ],
+        "settings": {
+          "name": "prior10",
+          "max_nfev": 60,
+          "regularization": 1.0,
+          "initial": "train_mean"
+        },
+        "gradient": "implicit exact-FEM Jacobian"
+      },
+      "replay_seconds": 0.7736061670002528,
+      "prediction_seconds": 0.8952171740238555,
+      "state_sha256": "7e62c197e84798ddec3e1a22cf033e2cea65fe435bf42f56a1b35a441b5f7a47",
+      "curve_path": "controls/common_anchor/pilot_14000/repeat_0/lateral_recent_0.2.npz"
+    }
+  ],
+  "failures": [],
+  "weak_likelihood": [
+    {
+      "channels": "basic",
+      "update": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.2000000000000008,
+          1.400000000000001
+        ],
+        "observation_update_samples": 21,
+        "observation_channels": [
+          2
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "projection_reference": {
+        "relative_field_error": 3.6927589382248876e-06,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "candidates": [
+        {
+          "candidate": "projected truth",
+          "coefficients": [
+            0.07593782539401382,
+            0.8747441978808057,
+            4.268005010188425e-06,
+            0.08387520863441507,
+            0.30965541716172257,
+            1.6937863838162315e-06
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "uniform 0.03",
+          "coefficients": [
+            0.03,
+            0.03,
+            0.03,
+            0.03,
+            0.03,
+            0.03
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "projected perturbation 0.03",
+          "coefficients": [
+            0.08410112151431101,
+            0.8530849022333367,
+            0.0005701390425484666,
+            0.07281862313860395,
+            0.30506368413707063,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "uniform 0.12",
+          "coefficients": [
+            0.12,
+            0.12,
+            0.12,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "projected perturbation 0.12",
+          "coefficients": [
+            0.10859100987520261,
+            0.7881070152909294,
+            0.002267752155163301,
+            0.03964886665117057,
+            0.29128848506311483,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "uniform 0.6",
+          "coefficients": [
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "projected perturbation 0.6",
+          "coefficients": [
+            0.23920374779995773,
+            0.441558284931424,
+            0.011321688755775751,
+            0.0,
+            0.21782075666868383,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "uniform 1.5",
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        },
+        {
+          "candidate": "projected perturbation 1.5",
+          "coefficients": [
+            0.48410263140887366,
+            0.0,
+            0.028297819881924098,
+            0.0,
+            0.08006876592912571,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015
+          ],
+          "whitened_jacobian_singular_values": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "numerical_rank": 0,
+          "nll_gradient_norm": 0.0,
+          "gaussian_nll": -105.5206316003
+        }
+      ],
+      "max_candidate_response_range": [
+        0.0
+      ],
+      "max_candidate_response_range_in_noise_std": [
+        0.0
+      ],
+      "scope": "Local derivatives and finite candidate probes within the declared positive six-coefficient basis; not a universal observability claim.",
+      "zero_force_can_exclude_states": "Candidate contact and likelihood are evaluated, not assumed absent."
+    },
+    {
+      "channels": "lateral",
+      "update": {
+        "anchor_time_s": 0.6000000000000003,
+        "observation_update_interval_s": [
+          1.2000000000000008,
+          1.400000000000001
+        ],
+        "observation_update_samples": 21,
+        "observation_channels": [
+          2,
+          3,
+          4
+        ],
+        "motion_interval_s": [
+          0.6000000000000003,
+          1.400000000000001
+        ],
+        "total_motion_span_s": 0.8000000000000007,
+        "motion_channels": [
+          "actual position",
+          "actual velocity at initialization/cut",
+          "command"
+        ],
+        "older_force_and_shape": "excluded before residual construction",
+        "observation_selection": "fixed interval; no contact detector or earlier force scan"
+      },
+      "projection_reference": {
+        "relative_field_error": 3.6927589382248876e-06,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "candidates": [
+        {
+          "candidate": "projected truth",
+          "coefficients": [
+            0.07593782539401382,
+            0.8747441978808057,
+            4.268005010188425e-06,
+            0.08387520863441507,
+            0.30965541716172257,
+            1.6937863838162315e-06
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            180.44374883548315,
+            0.4037790009318581,
+            4.4203122826318944e-13,
+            2.4391150178151287e-14,
+            2.7675574355615802e-15,
+            6.488675167781878e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 112.42931261225809,
+          "gaussian_nll": -624.5674284978281
+        },
+        {
+          "candidate": "uniform 0.03",
+          "coefficients": [
+            0.03,
+            0.03,
+            0.03,
+            0.03,
+            0.03,
+            0.03
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            176.79604634949723,
+            0.38949600342280133,
+            4.4954772189462326e-13,
+            3.724278122246975e-14,
+            2.19105206369419e-15,
+            5.889363863528273e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 3696.8979694165814,
+          "gaussian_nll": -405.9992855338573
+        },
+        {
+          "candidate": "projected perturbation 0.03",
+          "coefficients": [
+            0.08410112151431101,
+            0.8530849022333367,
+            0.0005701390425484666,
+            0.07281862313860395,
+            0.30506368413707063,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            180.44374930203878,
+            0.4037790136538171,
+            3.921463238558294e-13,
+            3.165856740985055e-14,
+            2.3480934130490263e-15,
+            5.754738005687335e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 12.61837068650814,
+          "gaussian_nll": -624.7564924803362
+        },
+        {
+          "candidate": "uniform 0.12",
+          "coefficients": [
+            0.12,
+            0.12,
+            0.12,
+            0.12,
+            0.12,
+            0.12
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            180.52665968781648,
+            0.4046209931641526,
+            4.143051312363882e-13,
+            2.96730566678894e-14,
+            2.515601567171248e-15,
+            7.193573198452132e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 587.6824090578307,
+          "gaussian_nll": -619.3839256911551
+        },
+        {
+          "candidate": "projected perturbation 0.12",
+          "coefficients": [
+            0.10859100987520261,
+            0.7881070152909294,
+            0.002267752155163301,
+            0.03964886665117057,
+            0.29128848506311483,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            180.36081664299653,
+            0.40295548040815576,
+            4.154226363483449e-13,
+            3.375226514028078e-14,
+            3.4657895277515077e-15,
+            5.453473943964953e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 387.400455177206,
+          "gaussian_nll": -622.4442722439879
+        },
+        {
+          "candidate": "uniform 0.6",
+          "coefficients": [
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6,
+            0.6
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            244.16626884470006,
+            0.7868593866401594,
+            5.307102232665881e-13,
+            3.897426430776782e-14,
+            7.548718776110165e-15,
+            2.9154736246154675e-15
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 35332.56632667041,
+          "gaussian_nll": 9846.599430422299
+        },
+        {
+          "candidate": "projected perturbation 0.6",
+          "coefficients": [
+            0.23920374779995773,
+            0.441558284931424,
+            0.011321688755775751,
+            0.0,
+            0.21782075666868383,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            178.73370758938685,
+            0.39662529788301926,
+            4.5111073393641005e-13,
+            3.0022638371192617e-14,
+            2.7162270469619118e-15,
+            4.0656962835566267e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 1744.290645717788,
+          "gaussian_nll": -577.084032185887
+        },
+        {
+          "candidate": "uniform 1.5",
+          "coefficients": [
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5,
+            1.5
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            244.16626884470006,
+            0.7868593866401594,
+            5.307102232665881e-13,
+            3.897426430776782e-14,
+            7.548718776110165e-15,
+            2.9154736246154675e-15
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 121254.8580181933,
+          "gaussian_nll": 122684.85198712996
+        },
+        {
+          "candidate": "projected perturbation 1.5",
+          "coefficients": [
+            0.48410263140887366,
+            0.0,
+            0.028297819881924098,
+            0.0,
+            0.08006876592912571,
+            0.0
+          ],
+          "max_predicted_force_N": 0.0,
+          "any_force_above_1e-9_N": false,
+          "any_force_above_observed_contact_threshold": false,
+          "noise_std": [
+            0.0015,
+            1e-06,
+            1e-06
+          ],
+          "whitened_jacobian_singular_values": [
+            176.7138722864811,
+            0.38867336337078157,
+            4.645343164526673e-13,
+            3.2973474283202974e-14,
+            2.5596219896971244e-15,
+            6.491282112397937e-16
+          ],
+          "numerical_rank": 2,
+          "nll_gradient_norm": 3865.530681127881,
+          "gaussian_nll": -385.391313541826
+        }
+      ],
+      "max_candidate_response_range": [
+        0.0,
+        8.173937244333493e-05,
+        8.17393724433377e-05
+      ],
+      "max_candidate_response_range_in_noise_std": [
+        0.0,
+        81.73937244333494,
+        81.7393724433377
+      ],
+      "scope": "Local derivatives and finite candidate probes within the declared positive six-coefficient basis; not a universal observability claim.",
+      "zero_force_can_exclude_states": "Candidate contact and likelihood are evaluated, not assumed absent."
+    }
+  ],
+  "checks": [
+    {
+      "check": "no_update_common_anchor_invariance",
+      "channels": "basic",
+      "passed": true,
+      "nominal_windows": [
+        "0.0",
+        "0.2",
+        "0.8"
+      ],
+      "state_sha256": [
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa"
+      ],
+      "replay_seconds": [
+        0.693662089004647,
+        0.6055541459936649,
+        0.6122656330117024
+      ]
+    },
+    {
+      "check": "unused_observation_isolation",
+      "channels": "basic",
+      "update": "current",
+      "passed": true
+    },
+    {
+      "check": "unused_observation_isolation",
+      "channels": "basic",
+      "update": "recent_0.2",
+      "passed": true
+    },
+    {
+      "check": "no_update_common_anchor_invariance",
+      "channels": "lateral",
+      "passed": true,
+      "nominal_windows": [
+        "0.0",
+        "0.2",
+        "0.8"
+      ],
+      "state_sha256": [
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa",
+        "dda479b9799151ebe04113dacd5410bd40b24b4977fc78e20c8efb907e0890fa"
+      ],
+      "replay_seconds": [
+        0.5492477220250294,
+        0.591147881001234,
+        0.6038762620300986
+      ]
+    },
+    {
+      "check": "unused_observation_isolation",
+      "channels": "lateral",
+      "update": "current",
+      "passed": true
+    },
+    {
+      "check": "unused_observation_isolation",
+      "channels": "lateral",
+      "update": "recent_0.2",
+      "passed": true
+    }
+  ],
+  "wall_seconds": 50.861402120033745
+}

@@ -1,0 +1,84 @@
+{
+  "selected": {
+    "name": "prior10",
+    "max_nfev": 60,
+    "regularization": 1.0,
+    "initial": "train_mean"
+  },
+  "scores": [
+    {
+      "candidate": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "force_rmse_mN": 2.2173950585696307,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 2.115296303498326
+    },
+    {
+      "candidate": {
+        "name": "train60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "force_rmse_mN": 2.2173950585696307,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 2.2953213224827778
+    },
+    {
+      "candidate": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "force_rmse_mN": 3.1035809682403808,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 2.14732162700966
+    },
+    {
+      "candidate": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "force_rmse_mN": 2.207845689416564,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 2.079274360497948
+    },
+    {
+      "candidate": {
+        "name": "prior03",
+        "max_nfev": 60,
+        "regularization": 0.3,
+        "initial": "train_mean"
+      },
+      "force_rmse_mN": 2.139252248036268,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 2.001292407978326
+    },
+    {
+      "candidate": {
+        "name": "prior10",
+        "max_nfev": 60,
+        "regularization": 1.0,
+        "initial": "train_mean"
+      },
+      "force_rmse_mN": 2.107560701770778,
+      "failed": 0,
+      "budget_limited": 0,
+      "median_fit_seconds": 1.497784902487183
+    }
+  ],
+  "source": "3 separate calibration histories; Slow press only",
+  "frozen_utc": "2026-10-30T23:44:55.371551+00:00"
+}

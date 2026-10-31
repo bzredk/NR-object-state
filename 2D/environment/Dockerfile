@@ -29,6 +29,11 @@ RUN python -m pip install --no-cache-dir --require-hashes \
         --display-name "NR 2D (Docker)" \
     && python -c "from pathlib import Path; import sysconfig; Path(sysconfig.get_paths()['purelib'], 'nr2d-source.pth').write_text('/workspaces/NR-object-state/2D/src\n')"
 
+COPY requirements-learning.txt /usr/local/share/nr2d/requirements-learning.txt
+RUN python -m pip install --no-cache-dir --require-hashes \
+        -r /usr/local/share/nr2d/requirements-learning.txt \
+    && python -m pip check
+
 USER vscode
 WORKDIR /workspaces/NR-object-state/2D
 CMD ["sleep", "infinity"]

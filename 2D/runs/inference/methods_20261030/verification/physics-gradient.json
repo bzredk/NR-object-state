@@ -1,0 +1,70 @@
+[
+  {
+    "window": 0.0,
+    "jacobian_seconds": 0.007089132035616785,
+    "relative_fd_error": 3.4223891739164796e-13,
+    "max_abs_error": 8.569145393266808e-12,
+    "rank": 2,
+    "projection": {
+      "relative_field_error": 0.014857416176917954,
+      "basis_singular_values": [
+        4.355293580788435e-05,
+        3.39481915235857e-06,
+        9.094999843562849e-07
+      ],
+      "basis_rank": 3,
+      "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+    }
+  },
+  {
+    "window": 0.2,
+    "jacobian_seconds": 0.14068362599937245,
+    "relative_fd_error": 3.1752288037167375e-12,
+    "max_abs_error": 1.5495427163614295e-10,
+    "rank": 2,
+    "projection": {
+      "relative_field_error": 0.015061576371414129,
+      "basis_singular_values": [
+        4.355293580788435e-05,
+        3.39481915235857e-06,
+        9.094999843562849e-07
+      ],
+      "basis_rank": 3,
+      "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+    }
+  },
+  {
+    "window": 0.8,
+    "jacobian_seconds": 0.7189860540092923,
+    "relative_fd_error": 1.3697397687464102e-07,
+    "max_abs_error": 0.0001005738775319287,
+    "rank": 6,
+    "projection": {
+      "relative_field_error": 0.018442175259094324,
+      "basis_singular_values": [
+        4.355293580788435e-05,
+        3.39481915235857e-06,
+        9.094999843562849e-07
+      ],
+      "basis_rank": 3,
+      "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+    }
+  },
+  {
+    "window": "contact",
+    "jacobian_seconds": 0.2537934959982522,
+    "relative_fd_error": 1.7844264235282499e-07,
+    "max_abs_error": 0.00010548530400456002,
+    "rank": 6,
+    "projection": {
+      "relative_field_error": 0.025011812021721223,
+      "basis_singular_values": [
+        4.355293580788435e-05,
+        3.39481915235857e-06,
+        9.094999843562849e-07
+      ],
+      "basis_rank": 3,
+      "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+    }
+  }
+]

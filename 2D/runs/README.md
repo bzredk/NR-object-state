@@ -4,7 +4,14 @@
 
 ## Scientific evidence
 
-The latest comparison is [sensor channels and contact history](information/channels_contact_20261026/RESULTS.md):
+The latest run is [estimator choice, sensing and history](inference/methods_20261030/RESULTS.md):
+calibrated TRF, GRU and RME-inspired VI on 24 fresh test histories, with three noise repeats and three training seeds.
+The old 24-history reanalysis is separate. `inference/methods_20261030/` holds datasets, model weights, per-history results,
+source/configuration freezes, latency records, figures and verification. Notebook Section 6 compares these auxiliary methods.
+Git includes complete metrics and the first prescribed test history (`test_20000`) for interactive replay and recomputation;
+full physical trajectories and repeated individual forecasts remain in the local archive.
+
+The earlier comparison is [sensor channels and contact history](information/channels_contact_20261026/RESULTS.md):
 24 new loading histories, three independent noise draws each, and the same estimated state used for two future commands.
 Its `summary.json`, `metrics.csv`, `calibration.json` and `failures.json` accompany the three figures.
 `histories/` stores physical episodes; `test/<history>/repeat_<n>/` stores observations, estimated states and predictions.

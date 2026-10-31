@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "scope": "Final display-label/image rerun after full release validation; no batch numerical changes",
+  "fresh_execution_record": "notebook_final.json",
+  "code_cells": 13,
+  "execution_counts": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ],
+  "error_outputs": 0,
+  "native_widget_views": 9,
+  "saved_widget_models": 230,
+  "source_sha256": {
+    "notebooks/spatial_2d_hidden_state.ipynb": "f54ac766db8f695e53f4df936ecc7d17efa45268411fbc6c53c2d209399369eb",
+    "src/nr2d/inference_display.py": "10bed732a28516bca1f7a5c6111f1c0a23e2840b609c5bb143d469f03f8f868b",
+    "tools/build_spatial_notebook.py": "e40cd793175dc49c60ae13d62239d71213bd1622321dee16c6767a887a9ecb48",
+    "tools/verify_inference_interactions.py": "005a766f86b42d43f0d91066bbd9bb34e6cdc8e1fc1eaaefb7460e3e877098b3",
+    "runs/inference/methods_20261030/metrics.csv": "6014b5eb6b78a21c8bfa7e08a2452bfd41b1fdce4b15f87e8a8d30d2b63e6963",
+    "runs/inference/methods_20261030/latency.csv": "6bc87468d01650b88ca3170e2da4218ac1ed1f77d76c59f03ca43ad5a0da1f36",
+    "runs/inference/methods_20261030/latency_startup.csv": "49ac49cbe457f218e122f600d912357dc23c8bdece3a0fbf3c257a051fdcc2c5",
+    "runs/inference/methods_20261030/verification/finite_mc_reference.json": "4647a601f6b9f9952b22baf3abcba5c824334ced46aee3e8543e8c4e5682153a",
+    "runs/inference/methods_20261030/figures/01_estimator_responses.png": "df33cbf4bc1477ed913773e43ac2dbf0e62df4b282fec1705768dadc5a1f7a96",
+    "runs/inference/methods_20261030/figures/02_information_by_estimator.png": "a728614a5eaecc3a69e6fe1c82c92155c3e8d1d6ae22d9e036e984273964ee83",
+    "runs/inference/methods_20261030/figures/03_accuracy_and_latency.png": "117035ab90e00fc50626792ca20418c5d2ff871bbea270e98a739886bff08f55",
+    "runs/inference/methods_20261030/figures/04_probability_checks.png": "9f946b3abf41726d1803ef027d31bf844460da2f4ea2c248fa6d2e48ad8c46cd"
+  },
+  "executed_notebook_sha256": "545f3a90efb0229f2e94e3c5801f9937742725cf5f8bd020f46261a3c002b153"
+}

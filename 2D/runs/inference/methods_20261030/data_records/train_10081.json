@@ -1,0 +1,1165 @@
+{
+  "id": "train_10081",
+  "seed": 10081,
+  "split": "train",
+  "status": "completed",
+  "failures": [],
+  "conditions": [
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.0",
+      "channels": [
+        2
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.0",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.2",
+      "channels": [
+        2
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.2",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.8",
+      "channels": [
+        2
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "0.8",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "contact",
+      "channels": [
+        2
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 0,
+      "window": "contact",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 1063366505,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "d79cf062f0deed0bd19a680c04fbc67e74c44de71f9742c246f3a6455a8a8373",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.0",
+      "channels": [
+        2
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.0",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.2",
+      "channels": [
+        2
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.2",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.8",
+      "channels": [
+        2
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "0.8",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "contact",
+      "channels": [
+        2
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 1,
+      "window": "contact",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 4184967445,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "35f12bd35968838a09fc6472f3b971aba1d68dd2dcaccb619b38aa54be94e6c7",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.0",
+      "channels": [
+        2
+      ],
+      "noise_seed": 898438586,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.0",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 898438586,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.022003372341277652,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.2",
+      "channels": [
+        2
+      ],
+      "noise_seed": 898438586,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.2",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 898438586,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.01852695439004512,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.8",
+      "channels": [
+        2
+      ],
+      "noise_seed": 898438586,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "0.8",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 898438586,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.0097183979798781,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "contact",
+      "channels": [
+        2
+      ],
+      "noise_seed": 898438586,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    },
+    {
+      "id": "train_10081",
+      "repeat": 2,
+      "window": "contact",
+      "channels": [
+        2,
+        3,
+        4
+      ],
+      "noise_seed": 898438586,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "bc27443a71080aece26e5f5b663e18edd105b844c25b50b7bac8ddef89583543",
+      "projection": {
+        "relative_field_error": 0.022083805091042515,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      }
+    }
+  ],
+  "physical_history_mode": "computed",
+  "parameters": {
+    "amplitude": 0.0004026323946804231,
+    "loading": 0.36,
+    "hold": 0.48,
+    "release": 0.26,
+    "wait": 0.3,
+    "excitation": "pulse",
+    "include_future": false
+  },
+  "physics": {
+    "max_body_balance_N": 3.241563857614427e-10,
+    "max_tool_balance_N": 3.241540690382405e-10,
+    "max_penetration_m": 4.799204580224986e-06,
+    "max_strain": 0.04549457247480995,
+    "passed": true
+  },
+  "trace_path": "histories/train_10081.npz",
+  "trace_sha256": "65c86301aaee1c46483f89dfbbcbdc5a6804214741d023ff817c809d3a733de1",
+  "prediction_cut": 1.400000000000001,
+  "wall_seconds": 1.1788577850093134,
+  "row_count": 24
+}

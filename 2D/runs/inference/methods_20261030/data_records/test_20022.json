@@ -1,0 +1,1189 @@
+{
+  "id": "test_20022",
+  "seed": 20022,
+  "split": "test",
+  "status": "completed",
+  "failures": [],
+  "conditions": [
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.0",
+      "channels": "basic",
+      "noise_seed": 173977428,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.0",
+      "channels": "lateral",
+      "noise_seed": 173977428,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.2",
+      "channels": "basic",
+      "noise_seed": 173977428,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.2",
+      "channels": "lateral",
+      "noise_seed": 173977428,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.8",
+      "channels": "basic",
+      "noise_seed": 173977428,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "0.8",
+      "channels": "lateral",
+      "noise_seed": 173977428,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "contact",
+      "channels": "basic",
+      "noise_seed": 173977428,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 0,
+      "window": "contact",
+      "channels": "lateral",
+      "noise_seed": 173977428,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "b8b2d48969da748395787092b3823db0a737d57823bc86ada22329d535fb0990",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.0",
+      "channels": "basic",
+      "noise_seed": 2076971653,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.0",
+      "channels": "lateral",
+      "noise_seed": 2076971653,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.2",
+      "channels": "basic",
+      "noise_seed": 2076971653,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.2",
+      "channels": "lateral",
+      "noise_seed": 2076971653,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.8",
+      "channels": "basic",
+      "noise_seed": 2076971653,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "0.8",
+      "channels": "lateral",
+      "noise_seed": 2076971653,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "contact",
+      "channels": "basic",
+      "noise_seed": 2076971653,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 1,
+      "window": "contact",
+      "channels": "lateral",
+      "noise_seed": 2076971653,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "2c8ee92317baefd2e98956d838ea40b88df73f9a9f9feea791ffb8d2b97fd81f",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.0",
+      "channels": "basic",
+      "noise_seed": 1014978253,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.0",
+      "channels": "lateral",
+      "noise_seed": 1014978253,
+      "window_start": 1.400000000000001,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 1,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.0,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 1,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {},
+      "observed_contact_samples": 0,
+      "update_sample_count": 1,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 140,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03201893010710981,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.2",
+      "channels": "basic",
+      "noise_seed": 1014978253,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.2",
+      "channels": "lateral",
+      "noise_seed": 1014978253,
+      "window_start": 1.2000000000000008,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.20000000000000018,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 21,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "wait": 0.20000000000000018
+      },
+      "observed_contact_samples": 0,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.0,
+      "begin_index": 120,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03379274046542408,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.8",
+      "channels": "basic",
+      "noise_seed": 1014978253,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "0.8",
+      "channels": "lateral",
+      "noise_seed": 1014978253,
+      "window_start": 0.6000000000000003,
+      "update_end": 1.400000000000001,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 81,
+      "propagation_seconds": 0.0,
+      "total_motion_span": 0.8000000000000007,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 81,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.2400000000000002,
+        "release": 0.26000000000000023,
+        "wait": 0.30000000000000027
+      },
+      "observed_contact_samples": 34,
+      "update_sample_count": 81,
+      "observed_contact_seconds": 0.3300000000000003,
+      "begin_index": 60,
+      "end_index": 140,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.024848064128350302,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "contact",
+      "channels": "basic",
+      "noise_seed": 1014978253,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    },
+    {
+      "id": "test_20022",
+      "repeat": 2,
+      "window": "contact",
+      "channels": "lateral",
+      "noise_seed": 1014978253,
+      "window_start": 0.7300000000000004,
+      "update_end": 0.9300000000000006,
+      "prediction_cut": 1.400000000000001,
+      "update_samples": 21,
+      "propagation_seconds": 0.4700000000000004,
+      "total_motion_span": 0.6700000000000006,
+      "observation_channels": [
+        2,
+        3,
+        4
+      ],
+      "motion_samples": 68,
+      "fixed_physical_scales": [
+        0.0005,
+        0.005,
+        0.25,
+        5e-05,
+        5e-05,
+        0.0005,
+        1.4
+      ],
+      "phase_seconds": {
+        "hold": 0.1100000000000001,
+        "release": 0.09000000000000008
+      },
+      "observed_contact_samples": 21,
+      "update_sample_count": 21,
+      "observed_contact_seconds": 0.20000000000000018,
+      "selection": {
+        "channel": "observed force",
+        "threshold_N": 0.0045,
+        "scanned_interval": [
+          0.0,
+          1.400000000000001
+        ]
+      },
+      "begin_index": 73,
+      "end_index": 93,
+      "observation_sha256": "318074e0750d018dbd9cc94c66158e1d463b6851acef7ffb16cce50e72777356",
+      "projection": {
+        "relative_field_error": 0.03010898912519044,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/D-strain projection at window start; unit-modulus weighting"
+      }
+    }
+  ],
+  "physical_history_mode": "computed",
+  "parameters": {
+    "amplitude": 0.0003951440429638427,
+    "loading": 0.36,
+    "hold": 0.48,
+    "release": 0.26,
+    "wait": 0.3,
+    "excitation": "hold",
+    "include_future": false
+  },
+  "physics": {
+    "max_body_balance_N": 2.5932489940150294e-09,
+    "max_tool_balance_N": 2.593248183899166e-09,
+    "max_penetration_m": 4.791995455446401e-06,
+    "max_strain": 0.04313323220901138,
+    "passed": true
+  },
+  "trace_path": "histories/test_20022.npz",
+  "trace_sha256": "baace8fce7fba0c04ce9f7d93ebce7e1d7696e5ec3af04b3c04a665ba1a490a8",
+  "prediction_cut": 1.400000000000001,
+  "wall_seconds": 3.128329389030114,
+  "row_count": 24
+}

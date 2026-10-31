@@ -2,7 +2,7 @@
 
 [2D overview](../README.md) · [Results](../README.md#results) · [Related reading](../README.md#related-reading)
 
-Different loading histories can leave different internal strains after the indenter returns to the same position. The synthetic material has two relaxation times, 0.12 s and 0.90 s. The estimator sees tool position, velocity, contact force and two lateral markers. Internal-strain fields are available only for simulation diagnostics and the true-state reference.
+Different loading histories can leave different internal strains after the indenter returns to the same position. The synthetic material has two relaxation times, 0.12 s and 0.90 s. The estimator sees tool position, velocity, contact force and two lateral markers. Internal-strain fields are not sensor inputs; they supply simulation diagnostics, privileged references and projection labels for the new learned estimators.
 
 ![Loading histories, state estimation and future response](figures/experiment_flow.svg)
 
@@ -20,14 +20,16 @@ The split unit is a complete loading history. Calibration, validation and test h
 
 ## Sensor channels and contact history
 
-The completed follow-up holds the physical system and prediction time fixed while comparing current measurements and history, each with and without lateral shape. It uses 24 new histories with three independent noise draws each. Observer settings are selected on three separate calibration histories; the same estimated state predicts Slow press and Fast press. [Results and uncertainty](../runs/information/channels_contact_20261026/RESULTS.md).
+The completed follow-up holds the physical system and prediction time fixed while comparing current measurements and history, each with and without lateral shape. It uses the published observer on 24 histories with three independent noise draws each. Observer settings are selected on three separate calibration histories; the same estimated state predicts Slow press and Fast press. [Results and uncertainty](../runs/information/channels_contact_20261026/RESULTS.md).
 
 The recent 0.2 s window contains detached waiting; the 0.8 s window also includes contact. A separate earlier-contact update is propagated to the prediction cut using measured motion. Its full input span is recorded, so a 0.2 s contact update is not presented as 0.2 s of total history. This comparison tests information content as well as elapsed duration. Material mismatch has not been tested in this study.
 
 ## Next comparison
 
-The independent batch finds useful lateral recovery history under nominal noise, although the original pilot found a short-window loss. The next experiment carries a contact-informed estimate through release and wait using recursive classical updates. Compare prediction error and update cost at several cuts, and separate recovery information from noise averaging. [Proposed next experiment](../runs/information/channels_contact_20261026/RESULTS.md#next-experiment).
+The recorded observer comparison finds useful lateral recovery history under nominal noise, although the original pilot found a short-window loss. The implemented [method comparison](INFERENCE_STUDY.md) asks whether those information gains persist with calibrated TRF, GRU and an RME-inspired prior plus VI. All infer the same window-start coefficients and share propagation, future commands and observations. The learning models share projection labels; a current-frame MLP checks a one-frame nonlinear alternative. [The RME audit](RME_ADAPTATION.md) documents the adaptation and its limits.
 
-The earlier shared-feedback study found no useful action gain. A further control comparison needs to establish whether a state estimate changes the action early enough to improve the task. Full 3D robot simulation follows these spatial mechanism tests, before hardware operation.
+Training-only priors, prior-only predictions, neural-initialized TRF and common-anchor updates separate offline information, likelihood refinement and propagation effects. Run records determine which stages are complete; the design alone establishes no method advantage. Recursive updates through release/wait and repeated observations at new prediction cuts remain a later test. A GRU reset for each finite window is not yet a validated recursive state estimator.
+
+The earlier shared-feedback study found no useful action gain. The current comparison predicts responses; common-feedback control still needs to establish whether an estimate changes the action early enough to improve the task. Full 3D robot simulation follows these spatial mechanism tests, before hardware operation.
 
 [Parameters](CONFIGURATION.md) · [Results](../runs/2d_contact/pilot_c9dd23016896/RESULTS.md) · [Notebook](../notebooks/spatial_2d_hidden_state.ipynb) · [Figure source](../tools/draw_experiment_flow.py) · [PDF](figures/experiment_flow.pdf)

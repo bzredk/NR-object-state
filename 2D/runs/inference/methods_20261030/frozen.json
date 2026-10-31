@@ -1,0 +1,775 @@
+{
+  "name": "Methods and observation information",
+  "run": "runs/inference/methods_20261030",
+  "old_run": "runs/information/channels_contact_20261026",
+  "training_sizes": [
+    32,
+    128
+  ],
+  "training_seeds": [
+    11,
+    23,
+    37
+  ],
+  "train_seeds": [
+    10000,
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012,
+    10013,
+    10014,
+    10015,
+    10016,
+    10017,
+    10018,
+    10019,
+    10020,
+    10021,
+    10022,
+    10023,
+    10024,
+    10025,
+    10026,
+    10027,
+    10028,
+    10029,
+    10030,
+    10031,
+    10032,
+    10033,
+    10034,
+    10035,
+    10036,
+    10037,
+    10038,
+    10039,
+    10040,
+    10041,
+    10042,
+    10043,
+    10044,
+    10045,
+    10046,
+    10047,
+    10048,
+    10049,
+    10050,
+    10051,
+    10052,
+    10053,
+    10054,
+    10055,
+    10056,
+    10057,
+    10058,
+    10059,
+    10060,
+    10061,
+    10062,
+    10063,
+    10064,
+    10065,
+    10066,
+    10067,
+    10068,
+    10069,
+    10070,
+    10071,
+    10072,
+    10073,
+    10074,
+    10075,
+    10076,
+    10077,
+    10078,
+    10079,
+    10080,
+    10081,
+    10082,
+    10083,
+    10084,
+    10085,
+    10086,
+    10087,
+    10088,
+    10089,
+    10090,
+    10091,
+    10092,
+    10093,
+    10094,
+    10095,
+    10096,
+    10097,
+    10098,
+    10099,
+    10100,
+    10101,
+    10102,
+    10103,
+    10104,
+    10105,
+    10106,
+    10107,
+    10108,
+    10109,
+    10110,
+    10111,
+    10112,
+    10113,
+    10114,
+    10115,
+    10116,
+    10117,
+    10118,
+    10119,
+    10120,
+    10121,
+    10122,
+    10123,
+    10124,
+    10125,
+    10126,
+    10127
+  ],
+  "validation_seeds": [
+    12000,
+    12001,
+    12002,
+    12003,
+    12004,
+    12005,
+    12006,
+    12007,
+    12008,
+    12009,
+    12010,
+    12011,
+    12012,
+    12013,
+    12014,
+    12015
+  ],
+  "calibration_seeds": [
+    13000,
+    13001,
+    13002,
+    13003,
+    13004,
+    13005,
+    13006,
+    13007
+  ],
+  "pilot_seeds": [
+    14000,
+    14001,
+    14002,
+    14003,
+    14004,
+    14005,
+    14006,
+    14007
+  ],
+  "test_seeds": [
+    20000,
+    20001,
+    20002,
+    20003,
+    20004,
+    20005,
+    20006,
+    20007,
+    20008,
+    20009,
+    20010,
+    20011,
+    20012,
+    20013,
+    20014,
+    20015,
+    20016,
+    20017,
+    20018,
+    20019,
+    20020,
+    20021,
+    20022,
+    20023
+  ],
+  "noise_repeats": 3,
+  "noise_root_seed": 20261030,
+  "windows": [
+    "0.0",
+    "0.2",
+    "0.8",
+    "contact"
+  ],
+  "channels": [
+    "basic",
+    "lateral"
+  ],
+  "actions": [
+    "Slow press",
+    "Fast press"
+  ],
+  "trf_candidates": [
+    {
+      "name": "train20",
+      "max_nfev": 20,
+      "regularization": 0.0,
+      "initial": "train_mean"
+    },
+    {
+      "name": "train60",
+      "max_nfev": 60,
+      "regularization": 0.0,
+      "initial": "train_mean"
+    },
+    {
+      "name": "flat60",
+      "max_nfev": 60,
+      "regularization": 0.0,
+      "initial": "flat"
+    },
+    {
+      "name": "ridge60",
+      "max_nfev": 60,
+      "regularization": 0.05,
+      "initial": "train_mean"
+    },
+    {
+      "name": "prior03",
+      "max_nfev": 60,
+      "regularization": 0.3,
+      "initial": "train_mean"
+    },
+    {
+      "name": "prior10",
+      "max_nfev": 60,
+      "regularization": 1.0,
+      "initial": "train_mean"
+    }
+  ],
+  "vi_candidates": [
+    {
+      "steps": 8,
+      "scale_multiplier": 0.3,
+      "lr": 0.05
+    },
+    {
+      "steps": 16,
+      "scale_multiplier": 0.3,
+      "lr": 0.05
+    },
+    {
+      "steps": 16,
+      "scale_multiplier": 1.0,
+      "lr": 0.05
+    }
+  ],
+  "posterior_samples": 16,
+  "bootstrap_resamples": 2000,
+  "probability_conditions": [
+    [
+      "basic",
+      "0.2"
+    ],
+    [
+      "lateral",
+      "0.2"
+    ],
+    [
+      "lateral",
+      "0.8"
+    ]
+  ],
+  "primary_contrasts": [
+    "current lateral benefit",
+    "0.2s lateral history benefit",
+    "0.8s lateral history benefit"
+  ],
+  "point_prediction": "physical coefficient posterior mean via Gauss-Hermite, propagated by shared FEM; not posterior predictive mean",
+  "scope": "Fixed synthetic material and full FEM. Supervised models use same privileged projection labels. No closed-loop control, GPU or hardware claim.",
+  "contact_window_seconds": 0.2,
+  "contact_threshold_N": 0.0045,
+  "trf_grid_extension_reason": "Calibration-only first pass selected the strongest tested regularization (0.05); extend to0.3and1.0beforeanyfinaltest tocheckprior-strength sensitivity.",
+  "selected_training_size": 128,
+  "frozen_utc": "2026-10-31T00:16:04.244042+00:00",
+  "code": {
+    "python": "3.11.9",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "processor": "",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.0",
+      "pillow": "12.3.0",
+      "ipywidgets": "8.1.8",
+      "ipympl": "0.10.0",
+      "ipykernel": "7.2.0",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.4"
+    },
+    "git_head": "1c14b1523a78472e7c0ab81bd29c5648a2fbe7b0",
+    "git_status": "M docs/CONTAINER.md\n M environment/.dockerignore\n M environment/Dockerfile\n M tools/README.md\n M tools/build_spatial_notebook.py\n?? configs/inference_study.json\n?? docs/INFERENCE_STUDY.md\n?? docs/RME_ADAPTATION.md\n?? environment/requirements-learning.txt\n?? runs/inference/\n?? src/nr2d/inference_analysis.py\n?? src/nr2d/inference_controls.py\n?? src/nr2d/inference_data.py\n?? src/nr2d/inference_display.py\n?? src/nr2d/inference_physics.py\n?? src/nr2d/inference_study.py\n?? src/nr2d/learning_models.py\n?? src/nr2d/variational.py\n?? tests/test_learning_models.py\n?? tests/test_variational.py\n?? tools/verify_inference_interactions.py\n?? ../research/presentations/10.2/node_modules\n?? ../research/presentations/10.2/output/2d-contact-once.gif",
+    "source_sha256": {
+      "__init__.py": "f21b01a5e4f6428eb3ccee4252277a9aa8a757ff76505835db6c7767421d71db",
+      "checks.py": "816180e1cc3951399bb75279724814f80c101e174fff62f9e9a74056adaf480f",
+      "cli.py": "ff1cb7c433cf53e42acb7f448f75e4abe155072e69c2aa15797b34d120719a29",
+      "estimators.py": "dd67e5e14ee0977a4eb089f3eb7c2e21ba2c6e15e5225a98b2136bcea316dd53",
+      "experiments.py": "9a70b2603ae36c49adce46dc0c92190069edfc52acf0d5104801d24d7c75c34b",
+      "inference_analysis.py": "1f93c7ac791b0683df54babc6c772437474ebf4a3c3320c21370d4926c077f26",
+      "inference_controls.py": "59e6bdf82d60838e2e96c1cd1b426a2ddde73ac7933f913b82826ca1bd0a2d9e",
+      "inference_data.py": "477f3ce04d848f88252a0f8f06f972d58837f576c9dffd7a7b11670174c178d8",
+      "inference_display.py": "35aa8e5be5f7369686d9082b9040211068e034bd3ded70c6310eba0cc610811f",
+      "inference_physics.py": "447652babd595f9d572d753bb5817164f617c6ca37151555376d84808162831a",
+      "inference_study.py": "cfbf323ed1a5fe0e071ede7239abca3e348dedb5823cdf68372554e89d65ef37",
+      "information.py": "c10029b0d01dc6cbcba109512dee45ca80ae22f05b8579464780712812b5c996",
+      "learning_models.py": "0c181d29c4d6a928a265d909a205bba43518d59a055e5fd74d69c70eedf860c5",
+      "physics.py": "3d64e0696aa4c0637f1e35723888b024bc7f75ef2d6c4650b5132344fb92f10e",
+      "plotting.py": "5b4942aee9ae4edeae007ae754221f61ed57589b7179d124418fbebc4c4ee744",
+      "protocols.py": "c99ec8b332f552e0b5fa8c205b4d35dda57605f82c1722d95a7d5921f148e6fd",
+      "variational.py": "ad3ec8167fcd4369ff2b72314bc10fc4267b6fe6bf434c5c63cd9ef17ed4123d",
+      "widgets.py": "06c8b9344a819efd3dbdb58bdea7cf60f883e4003bb667a8c0a4419ebae6e9ad"
+    }
+  },
+  "learning_packages": {
+    "torch": "2.8.0+cpu",
+    "threadpoolctl": "3.6.0"
+  },
+  "pilot_independent_histories": 8,
+  "paired_precision_planning": [
+    {
+      "left": [
+        "TRF calibrated",
+        "basic",
+        "0.0"
+      ],
+      "right": [
+        "TRF calibrated",
+        "lateral",
+        "0.0"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.840071135926491,
+      "required_n_for_target": 124,
+      "planned_95_halfwidth_mN": 1.1362651023169965
+    },
+    {
+      "left": [
+        "GRU",
+        "basic",
+        "0.0"
+      ],
+      "right": [
+        "GRU",
+        "lateral",
+        "0.0"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.574434873390382,
+      "required_n_for_target": 102,
+      "planned_95_halfwidth_mN": 1.0299884632527316
+    },
+    {
+      "left": [
+        "RME-inspired VI",
+        "basic",
+        "0.0"
+      ],
+      "right": [
+        "RME-inspired VI",
+        "lateral",
+        "0.0"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 1.492767895761028,
+      "required_n_for_target": 35,
+      "planned_95_halfwidth_mN": 0.5972315426737023
+    },
+    {
+      "left": [
+        "TRF calibrated",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "TRF calibrated",
+        "lateral",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 0.6664215045059151,
+      "required_n_for_target": 7,
+      "planned_95_halfwidth_mN": 0.26662413114403755
+    },
+    {
+      "left": [
+        "TRF calibrated",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "TRF calibrated",
+        "lateral",
+        "0.8"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 0.7540135443894925,
+      "required_n_for_target": 9,
+      "planned_95_halfwidth_mN": 0.3016682456739363
+    },
+    {
+      "left": [
+        "GRU",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "GRU",
+        "lateral",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 1.921477329308348,
+      "required_n_for_target": 57,
+      "planned_95_halfwidth_mN": 0.7687510381580982
+    },
+    {
+      "left": [
+        "GRU",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "GRU",
+        "lateral",
+        "0.8"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.0739713598953413,
+      "required_n_for_target": 67,
+      "planned_95_halfwidth_mN": 0.8297613569053207
+    },
+    {
+      "left": [
+        "RME-inspired VI",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "RME-inspired VI",
+        "lateral",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 1.5867587706169466,
+      "required_n_for_target": 39,
+      "planned_95_halfwidth_mN": 0.6348357243732513
+    },
+    {
+      "left": [
+        "RME-inspired VI",
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "RME-inspired VI",
+        "lateral",
+        "0.8"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 1.4943812943596695,
+      "required_n_for_target": 35,
+      "planned_95_halfwidth_mN": 0.5978770365490398
+    },
+    {
+      "left": [
+        "RME prior mean",
+        "basic",
+        "0.2"
+      ],
+      "right": [
+        "RME-inspired VI",
+        "basic",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 0.00020152168256334457,
+      "required_n_for_target": 2,
+      "planned_95_halfwidth_mN": 8.062546474992897e-05
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "GRU",
+      "reference": "TRF calibrated",
+      "left": [
+        "basic",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.0"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.282843710613811,
+      "required_n_for_target": 81,
+      "planned_95_halfwidth_mN": 0.9133277014091847
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "GRU",
+      "reference": "TRF calibrated",
+      "left": [
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.4891721302216934,
+      "required_n_for_target": 96,
+      "planned_95_halfwidth_mN": 0.9958762614966326
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "GRU",
+      "reference": "TRF calibrated",
+      "left": [
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.8"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.61822363708883,
+      "required_n_for_target": 106,
+      "planned_95_halfwidth_mN": 1.0475076174157207
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "RME-inspired VI",
+      "reference": "TRF calibrated",
+      "left": [
+        "basic",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.0"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 1.4439941356581307,
+      "required_n_for_target": 33,
+      "planned_95_halfwidth_mN": 0.5777179745758299
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "RME-inspired VI",
+      "reference": "TRF calibrated",
+      "left": [
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.2"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.028152205893558,
+      "required_n_for_target": 64,
+      "planned_95_halfwidth_mN": 0.8114298774394267
+    },
+    {
+      "contrast": "Difference of information gains",
+      "method": "RME-inspired VI",
+      "reference": "TRF calibrated",
+      "left": [
+        "lateral",
+        "0.0"
+      ],
+      "right": [
+        "lateral",
+        "0.8"
+      ],
+      "pilot_independent_histories": 8,
+      "paired_sd_mN": 2.1697793486876824,
+      "required_n_for_target": 73,
+      "planned_95_halfwidth_mN": 0.8680925355898297
+    }
+  ],
+  "target_halfwidth_mN": 0.5,
+  "minimum_n": 12,
+  "maximum_small_batch_n": 24,
+  "uncapped_precision_n": 124,
+  "precision_target_met_in_planning": false,
+  "pilot_median_job_seconds": 570.7157833050005,
+  "conservative_test_core_seconds": 123274.60919388011,
+  "sample_size_reason": "Independent pilot paired SD, descriptive 0.5 mN interval target (one third of force-noise SD), bounded to12--24 complete histories using measured cost; not a task tolerance, equivalence margin or power certification",
+  "analysis_rule": "Pointwise whole-history percentile bootstrap; primary contrasts from study.json; no equivalence or VI-over-MAP claim; no post-test tuning",
+  "trf": {
+    "selected": {
+      "name": "prior10",
+      "max_nfev": 60,
+      "regularization": 1.0,
+      "initial": "train_mean"
+    },
+    "scores": [
+      {
+        "candidate": {
+          "name": "train20",
+          "max_nfev": 20,
+          "regularization": 0.0,
+          "initial": "train_mean"
+        },
+        "force_rmse_mN": 2.2173950585696307,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 2.115296303498326
+      },
+      {
+        "candidate": {
+          "name": "train60",
+          "max_nfev": 60,
+          "regularization": 0.0,
+          "initial": "train_mean"
+        },
+        "force_rmse_mN": 2.2173950585696307,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 2.2953213224827778
+      },
+      {
+        "candidate": {
+          "name": "flat60",
+          "max_nfev": 60,
+          "regularization": 0.0,
+          "initial": "flat"
+        },
+        "force_rmse_mN": 3.1035809682403808,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 2.14732162700966
+      },
+      {
+        "candidate": {
+          "name": "ridge60",
+          "max_nfev": 60,
+          "regularization": 0.05,
+          "initial": "train_mean"
+        },
+        "force_rmse_mN": 2.207845689416564,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 2.079274360497948
+      },
+      {
+        "candidate": {
+          "name": "prior03",
+          "max_nfev": 60,
+          "regularization": 0.3,
+          "initial": "train_mean"
+        },
+        "force_rmse_mN": 2.139252248036268,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 2.001292407978326
+      },
+      {
+        "candidate": {
+          "name": "prior10",
+          "max_nfev": 60,
+          "regularization": 1.0,
+          "initial": "train_mean"
+        },
+        "force_rmse_mN": 2.107560701770778,
+        "failed": 0,
+        "budget_limited": 0,
+        "median_fit_seconds": 1.497784902487183
+      }
+    ],
+    "source": "3 separate calibration histories; Slow press only",
+    "frozen_utc": "2026-10-30T23:44:55.371551+00:00"
+  },
+  "vi": {
+    "selected": {
+      "steps": 8,
+      "scale_multiplier": 0.3,
+      "lr": 0.05
+    },
+    "scores": [
+      {
+        "candidate": {
+          "steps": 8,
+          "scale_multiplier": 0.3,
+          "lr": 0.05
+        },
+        "force_rmse_mN": 1.5613985259639123,
+        "failed": 0,
+        "median_vi_seconds": 2.327201790001709
+      },
+      {
+        "candidate": {
+          "steps": 16,
+          "scale_multiplier": 0.3,
+          "lr": 0.05
+        },
+        "force_rmse_mN": 1.964909848104326,
+        "failed": 0,
+        "median_vi_seconds": 2.8587821319815703
+      },
+      {
+        "candidate": {
+          "steps": 16,
+          "scale_multiplier": 1.0,
+          "lr": 0.05
+        },
+        "force_rmse_mN": 8.336918502533669,
+        "failed": 0,
+        "median_vi_seconds": 3.1930926290224306
+      }
+    ],
+    "source": "3 separate calibration histories;3 prespecified conditions; Slow press only",
+    "frozen_utc": "2026-10-30T23:54:19.124669+00:00"
+  },
+  "artifacts_sha256": {
+    "datasets/calibration.npz": "88fd996790353b5b2ff882336dd270afc998559c269c5c78402e1f6e6f2ac032",
+    "datasets/pilot.npz": "020702b1604632292727cc7adcf2b11579a6bc37a3ab163be5167c9cb9749966",
+    "datasets/train.npz": "23c8dbd5277033df2798abaab75f3ef50cec8996249ef9a916ef661811bb8bbc",
+    "datasets/validation.npz": "64213e1888041d2f996ec3d1eb8fa9a0e6bb6785943d553e38ecae2853b916aa",
+    "models/gru_n128_s11.pt": "98dc40f398b3f296c75d573c2e12ebe287de0132e7f83f60484bd9fd5fbcb506",
+    "models/gru_n128_s23.pt": "a799ba11b3365bfed4ada8ccc36a6fef311abec91ee3e11b0b6d947f2e9da73c",
+    "models/gru_n128_s37.pt": "2a692fd29e6022d98646598207c23bb8652c80192f6148ee3aa40b69e8d48d23",
+    "models/gru_n32_s11.pt": "cd25e3d390876e04f1f34b99e134c3542819cf91f98190ec08bf145b87441acd",
+    "models/gru_n32_s23.pt": "98ee4e818c018630a441c372227ce31ed56b067d8ef8a14e6fafa6e622cdec1f",
+    "models/gru_n32_s37.pt": "5fc3bc52c59978833b912880d3d6ad9d494e597323cfc54e163b9a37a0422c53",
+    "models/mlp_n128_s11.pt": "454b0e1a07f1e2cdd074df9f60b6e27cb9d9aab4dc3a703e68da97c29153f55d",
+    "models/mlp_n128_s23.pt": "f9ec4879aed7352903d66f72112e31399a62c4083f215e080d50a5b07d5275d2",
+    "models/mlp_n128_s37.pt": "4a0187d50adc93ff07937a0f7293a5b2d86848bb3c504aef301a8ca27ddd98ff",
+    "models/mlp_n32_s11.pt": "4e20a39e9181515088f56434b5ec6e78129f911fd5b54a7ba4f013a690512a8d",
+    "models/mlp_n32_s23.pt": "977d3f1e0014bbbe4850542ee73c3620e90b3f19684d37f6caa9b74d48b008b2",
+    "models/mlp_n32_s37.pt": "33cd61d89a64d2ad2a546c88b928050e149f7b3963242afe60f4e2e117f54a9b",
+    "models/rme_n128_s11.pt": "e10c2a39734ac156408db40ef68f12b363d3ab6a687d9a1368961e98fbf82468",
+    "models/rme_n128_s23.pt": "9363094910269e619ed003b65c042bd6b09ae277d2c971f7af1e1f75792fbc70",
+    "models/rme_n128_s37.pt": "f0f5c3d37e9c213c01feec8c72f50e467a781c8a528f9647dc0a55dcc8dda8c6",
+    "models/rme_n32_s11.pt": "c02cb59d599a7e1318223ec3930099173d6cb6744349f2b6b660e7eaa93aa81b",
+    "models/rme_n32_s23.pt": "aed83ef6e808c42c85371db44b52fd15826ff6253698684874b89549b4ed5d02",
+    "models/rme_n32_s37.pt": "936ebf792f55ef88ec63d47f0e88a31999a6c3d5f63c5ffcc36793ed9f96901b",
+    "physics.json": "f1c64acc1b1af7cfda0b09b07fcd7a0cb337f13bc799976f8fc9ce085fd39cb8",
+    "study.json": "12f5d98e98dbf62547efbbbc7412acd1b019bdbc91bbac0d1e627224f9a8b615",
+    "training.json": "04954d003d9ff30804fd4235165d36d0d0fba224cb28543f0d75178474a35e86"
+  }
+}

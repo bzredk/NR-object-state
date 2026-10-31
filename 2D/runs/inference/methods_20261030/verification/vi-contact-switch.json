@@ -1,0 +1,64 @@
+{
+  "time": 0.9400000000000006,
+  "base_coefficients": [
+    0.07759892711820625,
+    0.6268082054266937,
+    0.31380072379595814,
+    0.03239098050921903,
+    0.4046202396290333,
+    0.15477907314822298
+  ],
+  "bracket": [
+    0.0,
+    3.988460869458703
+  ],
+  "gap_bracket_m": [
+    2.6123301832409185e-06,
+    -0.00043784405140146615
+  ],
+  "status": "switch_bracketed",
+  "crossing_alpha": 1.0132577161136562,
+  "one_sided_checks": [
+    {
+      "offset_alpha": -0.001,
+      "max_gap_m": 4.035533230500876e-09,
+      "active_contact_points": 2,
+      "force_N": 0.0001345177743500292,
+      "analytic_directional_nll_gradient": 207.45072456217883,
+      "finite_difference": 207.45055777904085,
+      "absolute_error": 0.00016678313798479394,
+      "peak_total_strain": 0.024252163777181354
+    },
+    {
+      "offset_alpha": -0.0001,
+      "max_gap_m": 4.035533261725899e-10,
+      "active_contact_points": 2,
+      "force_N": 1.345177753908633e-05,
+      "analytic_directional_nll_gradient": 214.6887432100246,
+      "finite_difference": 214.68856110831157,
+      "absolute_error": 0.0001821017130225755,
+      "peak_total_strain": 0.024264457075655412
+    },
+    {
+      "offset_alpha": 0.0001,
+      "max_gap_m": -1.983306483280267e-08,
+      "active_contact_points": 0,
+      "force_N": 0.0,
+      "analytic_directional_nll_gradient": 0.0,
+      "finite_difference": 0.0,
+      "absolute_error": 0.0,
+      "peak_total_strain": 0.024268217675915697
+    },
+    {
+      "offset_alpha": 0.001,
+      "max_gap_m": -1.983568381630496e-07,
+      "active_contact_points": 0,
+      "force_N": 0.0,
+      "analytic_directional_nll_gradient": 0.0,
+      "finite_difference": 0.0,
+      "absolute_error": 0.0,
+      "peak_total_strain": 0.024289771166416618
+    }
+  ],
+  "interpretation": "Piecewise smooth force likelihood. Different contact sets on the two sides have different derivatives; no smoothness or exact centered derivative is asserted at the switching point."
+}

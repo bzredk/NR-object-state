@@ -46,7 +46,7 @@ The daily check runs dependency validation, contract tests and a fresh notebook 
 | `2D/runs/` | Host-mounted data and outputs; retained after container replacement |
 | Image filesystem | Python packages and kernel registration |
 
-The image pins the Python base digest and 98 package versions with wheel hashes. It loads `2D/src/` from the bind mount. Python and Jupyter run inside the container; code, settings and results stay on the host. CUDA is not part of this CPU image.
+The image pins the Python base digest and the original 98-package lock, with a separate hashed [learning dependency lock](../environment/requirements-learning.txt) for CPU PyTorch and its additions. It loads `2D/src/` from the bind mount. Python and Jupyter run inside the container; code, settings and results stay on the host. CUDA is not part of this CPU image.
 
 To update dependencies, edit `environment/requirements-container.in`, resolve wheels inside Linux/amd64 Python 3.11.9, and use `tools/lock_container_requirements.py` to write the lock. Rebuild and run the full check.
 

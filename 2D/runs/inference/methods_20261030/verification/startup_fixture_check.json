@@ -1,0 +1,9 @@
+{
+  "force_bitwise_equal": true,
+  "markers_bitwise_equal": true,
+  "command_bitwise_equal": true,
+  "state_hash_equal": true,
+  "future_command_samples": 100,
+  "fixture_excludes_full_state": true,
+  "passed": true
+}

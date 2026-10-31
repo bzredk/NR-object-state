@@ -1,0 +1,232 @@
+{
+  "name": "Methods and observation information",
+  "claim": "The predictive value of sensing/history can depend on estimator and its training prior; probabilistic estimates require empirical uncertainty tests.",
+  "unit_of_analysis": "complete physically generated loading history",
+  "datasets": [
+    "new train128",
+    "validation16",
+    "calibration8",
+    "pilot8",
+    "old24 seen histories",
+    "new frozen test, not yet generated"
+  ],
+  "splits": [
+    {
+      "name": "train",
+      "held_out": "train complete parent histories",
+      "leakage_check": "disjoint physical generator seeds; every window/noise/action retains its parent split"
+    },
+    {
+      "name": "validation",
+      "held_out": "validation complete parent histories",
+      "leakage_check": "disjoint physical generator seeds; every window/noise/action retains its parent split"
+    },
+    {
+      "name": "calibration",
+      "held_out": "calibration complete parent histories",
+      "leakage_check": "disjoint physical generator seeds; every window/noise/action retains its parent split"
+    },
+    {
+      "name": "pilot",
+      "held_out": "pilot complete parent histories",
+      "leakage_check": "disjoint physical generator seeds; every window/noise/action retains its parent split"
+    },
+    {
+      "name": "test",
+      "held_out": "test complete parent histories",
+      "leakage_check": "disjoint physical generator seeds; every window/noise/action retains its parent split"
+    }
+  ],
+  "baselines": [
+    {
+      "name": "TRF published",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "TRF calibrated",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "GRU",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "Snapshot MLP",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "RME prior",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "RME prior mean",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "RME-inspired VI",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "Fixed prior VI",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "Neural-init TRF",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "Projected truth",
+      "category": "reference",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "Full replay",
+      "category": "reference",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    },
+    {
+      "name": "True state",
+      "category": "estimator",
+      "controlled_variables": [
+        "physics",
+        "window-start representation",
+        "sensor mask",
+        "past noise",
+        "future commands"
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "name": "future force RMSE mN",
+      "direction": "lower",
+      "rationale": "primary interaction prediction",
+      "primary": true
+    },
+    {
+      "name": "batch1 online latency seconds",
+      "direction": "lower",
+      "rationale": "inference plus replay and future simulation",
+      "primary": false
+    },
+    {
+      "name": "predictive CRPS and coverage/width",
+      "direction": "lower/calibrated",
+      "rationale": "uncertainty evidence",
+      "primary": false
+    }
+  ],
+  "ablations": [
+    "same neural initialization into TRF",
+    "no VI with matched physical-mean summary",
+    "fixed training prior with VI",
+    "common-anchor propagation vs observation updates"
+  ],
+  "falsification_criteria": [
+    "No neural improvement over trained-prior calibrated TRF at matched conditions",
+    "Apparent history advantage disappears under common prior propagation",
+    "VI worsens proper predictive score or gives misleading narrow intervals"
+  ],
+  "compute_budget": {
+    "device": "CPU only",
+    "threads_per_process": 1,
+    "batch_size_online": 1,
+    "training_sizes": [
+      32,
+      128
+    ],
+    "training_seeds": 3,
+    "pilot_then_freeze": true
+  },
+  "seeds": [
+    11,
+    23,
+    37
+  ],
+  "artifacts": [
+    "source and environment hashes",
+    "parent split manifests",
+    "weights",
+    "raw curves/metrics",
+    "optimization traces",
+    "failures",
+    "dedicated latency",
+    "Notebook",
+    "four exported figures"
+  ]
+}

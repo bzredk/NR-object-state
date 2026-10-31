@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "fresh_kernel": true,
+  "wall_seconds": 9.826610640971921,
+  "code_cells": 13,
+  "kernel": "nr-spatial-state",
+  "platform": "linux",
+  "python": "/usr/local/bin/python",
+  "output": "runs/inference/methods_20261030/verification/release/executed_final.ipynb"
+}

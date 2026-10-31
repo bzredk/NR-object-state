@@ -1,0 +1,11 @@
+{
+  "record_directory": "latency_records/20261031T014758693695Z/application",
+  "rows": 12,
+  "failures": [],
+  "fixture_sha256": "8fc9e191c5b38adeb28bbac44de96bd3f1efeb8732aec0f95c253768e3696384",
+  "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+  "batch_size": 1,
+  "cpu_threads": 1,
+  "scope": "Three main estimators; pilot14000/lateral0.8/seed11/Slow press. Separate cold child exits after one call. A separate child warms once then measures three resident-context app calls. No oracle targets/projection in either child.",
+  "filesystem_cache": "Fresh Python processes do not imply a cold OS/filesystem cache; neither host cache nor container-image cache is flushed."
+}

@@ -1,0 +1,78 @@
+{
+  "created_utc": "2026-10-31T01:57:50.565958+00:00",
+  "record_directory": "latency_records/20261031T014758693695Z",
+  "completed_rows": 96,
+  "failures": [],
+  "warm_repeats": 3,
+  "wall_seconds": 591.8374896570458,
+  "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+  "phase_suite_wall_seconds": 465.16632508300245,
+  "application_timing": {
+    "record_directory": "latency_records/20261031T014758693695Z/application",
+    "rows": 12,
+    "failures": [],
+    "fixture_sha256": "8fc9e191c5b38adeb28bbac44de96bd3f1efeb8732aec0f95c253768e3696384",
+    "cpu": "12th Gen Intel(R) Core(TM) i9-12900K",
+    "batch_size": 1,
+    "cpu_threads": 1,
+    "scope": "Three main estimators; pilot14000/lateral0.8/seed11/Slow press. Separate cold child exits after one call. A separate child warms once then measures three resident-context app calls. No oracle targets/projection in either child.",
+    "filesystem_cache": "Fresh Python processes do not imply a cold OS/filesystem cache; neither host cache nor container-image cache is flushed."
+  },
+  "torch_version": "2.8.0+cpu",
+  "torch_cpu_threads": 1,
+  "threadpools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.11/site-packages/numpy.libs/libscipy_openblas64_-32a4b2a6.so",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "/usr/local/lib/python3.11/site-packages/scipy.libs/libscipy_openblas-6cdc3b4a.so",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "filepath": "/usr/local/lib/python3.11/site-packages/torch/lib/libgomp.so.1",
+      "version": null
+    }
+  ],
+  "conditions": "pilot_14000, noise repeat 0, training seed 11; Slow press; CPU, serial, batch 1",
+  "online_compute": "Use total_seconds and phase fields; posterior replay and prediction are included where requested. dedicated_wall_seconds also includes experimental setup, true trajectory/projection diagnostics and I/O, so is not deployment latency.",
+  "cold_definition": "First selected-condition invocation with cleared learned model cache in an existing Python process. Packages and earlier FEM routines can be warm; not a fresh OS-process measurement.",
+  "forecast_cache": "Disabled for every dedicated timing call. Batch evaluation may reuse exact state/action forecasts; likelihood and Jacobian calls are not replaced by that cache.",
+  "exclusivity": "Caller is responsible for stopping competing training/evaluation workers before invoking this suite.",
+  "code_sha256": {
+    "__init__.py": "f21b01a5e4f6428eb3ccee4252277a9aa8a757ff76505835db6c7767421d71db",
+    "checks.py": "816180e1cc3951399bb75279724814f80c101e174fff62f9e9a74056adaf480f",
+    "cli.py": "ff1cb7c433cf53e42acb7f448f75e4abe155072e69c2aa15797b34d120719a29",
+    "estimators.py": "dd67e5e14ee0977a4eb089f3eb7c2e21ba2c6e15e5225a98b2136bcea316dd53",
+    "experiments.py": "9a70b2603ae36c49adce46dc0c92190069edfc52acf0d5104801d24d7c75c34b",
+    "inference_analysis.py": "59cadaa91393e4aa8dc9a4bb9dbebc89cd7a4dd9f615a9c2c1eff6c693f8d9ba",
+    "inference_controls.py": "59e6bdf82d60838e2e96c1cd1b426a2ddde73ac7933f913b82826ca1bd0a2d9e",
+    "inference_data.py": "477f3ce04d848f88252a0f8f06f972d58837f576c9dffd7a7b11670174c178d8",
+    "inference_display.py": "35aa8e5be5f7369686d9082b9040211068e034bd3ded70c6310eba0cc610811f",
+    "inference_physics.py": "447652babd595f9d572d753bb5817164f617c6ca37151555376d84808162831a",
+    "inference_study.py": "4749de4140f46dc6533b80b0c3af0f54118b61041cbec6d1b89ab9f4fce24bb3",
+    "information.py": "c10029b0d01dc6cbcba109512dee45ca80ae22f05b8579464780712812b5c996",
+    "learning_models.py": "0c181d29c4d6a928a265d909a205bba43518d59a055e5fd74d69c70eedf860c5",
+    "physics.py": "3d64e0696aa4c0637f1e35723888b024bc7f75ef2d6c4650b5132344fb92f10e",
+    "plotting.py": "5b4942aee9ae4edeae007ae754221f61ed57589b7179d124418fbebc4c4ee744",
+    "protocols.py": "c99ec8b332f552e0b5fa8c205b4d35dda57605f82c1722d95a7d5921f148e6fd",
+    "variational.py": "ad3ec8167fcd4369ff2b72314bc10fc4267b6fe6bf434c5c63cd9ef17ed4123d",
+    "widgets.py": "06c8b9344a819efd3dbdb58bdea7cf60f883e4003bb667a8c0a4419ebae6e9ad"
+  }
+}

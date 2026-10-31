@@ -1,0 +1,106 @@
+{
+  "checked_artifacts": 25,
+  "passed": true,
+  "artifacts": [
+    {
+      "path": "datasets/calibration.npz",
+      "matches": true
+    },
+    {
+      "path": "datasets/pilot.npz",
+      "matches": true
+    },
+    {
+      "path": "datasets/train.npz",
+      "matches": true
+    },
+    {
+      "path": "datasets/validation.npz",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n128_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n128_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n128_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n32_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n32_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/gru_n32_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n128_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n128_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n128_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n32_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n32_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/mlp_n32_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n128_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n128_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n128_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n32_s11.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n32_s23.pt",
+      "matches": true
+    },
+    {
+      "path": "models/rme_n32_s37.pt",
+      "matches": true
+    },
+    {
+      "path": "physics.json",
+      "matches": true
+    },
+    {
+      "path": "study.json",
+      "matches": true
+    },
+    {
+      "path": "training.json",
+      "matches": true
+    }
+  ]
+}

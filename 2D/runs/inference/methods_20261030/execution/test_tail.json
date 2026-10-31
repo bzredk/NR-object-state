@@ -1,0 +1,14 @@
+{
+  "purpose": "Parallelize fixed unstarted tail; primary queue will replay these completed jobs later",
+  "parents": [
+    "test_20020",
+    "test_20021",
+    "test_20022",
+    "test_20023"
+  ],
+  "workers": 12,
+  "started_utc": "2026-10-31T01:13:04.220127+00:00",
+  "status": "completed",
+  "jobs": 12,
+  "wall_seconds": 1051.6620094889659
+}

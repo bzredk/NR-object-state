@@ -15,7 +15,7 @@ Open the project with **Dev Containers: Reopen in Container**, select the contai
 The default computes a fresh main trajectory and replays saved checks and predictions.
 Use **Recompute** for a new calculation; the timeline replays the trajectory.
 
-[Latest comparison: sensors and contact](#5.-Sensor-channels-and-contact-history) | [Docker setup](../docs/CONTAINER.md) | [Pilot results](../runs/2d_contact/pilot_c9dd23016896/RESULTS.md)
+[Estimator comparison](#6.-Does-estimator-choice-change-the-value-of-information?) | [Sensors and contact](#5.-Sensor-channels-and-contact-history) | [Docker setup](../docs/CONTAINER.md) | [Pilot results](../runs/2d_contact/pilot_c9dd23016896/RESULTS.md)
 """),
 C("""from pathlib import Path
 import os
@@ -234,6 +234,9 @@ display(Markdown('Three noise repeats are averaged within each history. Interval
 """),
 M(r"""## Findings and next experiment
 
+These recorded sensor-ablation results use the published finite-window observer. Section 6 checks how the
+information gains depend on the estimator and its prior; these numbers are not estimator-independent limits.
+
 - Current lateral shape reduces mean Slow-press force RMSE from 11.50 to 2.20 mN. It provides substantial information, but history still improves prediction.
 - Recent 0.2 s lateral history reduces error to 1.29 mN even though this interval contains no contact. Recovery measurements retain useful information.
 - Without lateral sensing, the recent wait provides no contact signal and the coefficients remain at initialization. Earlier 0.2 s contact plus motion propagation gives 0.48 mN; the recent 0.8 s window gives 0.31 mN.
@@ -242,12 +245,12 @@ M(r"""## Findings and next experiment
 The earlier eight-history pilot's negative noisy-short-window result is retained; it does not generalize to this independent
 24-history, three-noise-draw batch. The new [results](../runs/information/channels_contact_20261026/RESULTS.md) report all paired intervals.
 There were 201 optimizer-budget stops among 576 finite-window fits and one retained physical-history tolerance overrun.
-The next useful comparison is a warm-started recursive classical observer that carries the contact estimate through the wait,
-with uncertainty-aware updates. Establish its state and timing benefit before introducing a learned representation.
+Section 6 compares calibrated TRF, learned state estimates and variational refinement on this question.
+A continuously updated recursive observer that carries the contact estimate through the wait remains untested.
 
 These remain small-strain, same-material prediction experiments. Reusing a state across two commanded futures does not establish
-a control benefit or a universally sufficient state. Common-feedback action tests follow after checking that true-state access can
-improve the selected task.
+a control benefit or a universally sufficient state. The 2D common-feedback action comparison remains untested;
+first check whether true-state access can improve the selected task.
 
 **Three-minute presentation:** physical recovery -> channel-ablation curves -> window/contact timeline -> paired gains and remaining estimator limits.
 """),
@@ -264,6 +267,95 @@ print('Vector/raster/GIF export: python -m nr2d.cli export')
 print('Configuration, raw traces, matching, inference logs and source hashes are stored in the run folder.')
 """),
 ]
+nb.cells.extend([
+M(r"""## 6. Does estimator choice change the value of information?
+
+Compare the published and calibrated TRF fits, a small GRU, and an RME-inspired neural prior with variational inference.
+All methods infer the same six coefficients at the **start** of the selected observation window, then use the same
+measured-motion replay and command-driven FEM prediction. Learned models share simulated state supervision.
+The simulator's full state, its six-coefficient projection and relaxed-start replay are privileged references.
+
+The earlier 24 histories are a reanalysis of already inspected data. The new test histories are evaluated after model
+selection. Noise repeats and training seeds do not increase the number of independent physical histories.
+
+The default below **replays recorded results**. Dropdowns select a view; **Run selection** applies it.
+Checking **Recompute selected comparison** repeats inference and future FEM prediction into a separate interactive
+record. The time slider only moves a cursor. Training and batch generation are CLI operations, never implicit widget work.
+"""),
+C("""from nr2d.inference_display import InferenceDashboard, load_metrics
+
+INFERENCE_RUN = ROOT / 'runs/inference/methods_20261030'
+inference_dashboard = None
+if (INFERENCE_RUN / 'study.json').exists():
+    estimator_spec = read_json(INFERENCE_RUN / 'study.json')
+    print('Planned training seeds:', estimator_spec.get('training_seeds', []))
+if (INFERENCE_RUN / 'training.json').exists():
+    model_training = read_json(INFERENCE_RUN / 'training.json')
+    print('Training record status:', model_training.get('status', 'unreported'))
+    trained_models = {}
+    for item in model_training.get('results', []):
+        if item.get('status') == 'completed':
+            key = (item['kind'], item['train_history_count'])
+            trained_models.setdefault(key, set()).add(item['seed'])
+    display(widgets.HTML(table(['Model', 'Training histories', 'Completed training seeds'],
+        [[kind, count, ', '.join(map(str, sorted(seeds)))]
+         for (kind, count), seeds in sorted(trained_models.items())])))
+if (INFERENCE_RUN / 'summary.json').exists():
+    estimator_report = read_json(INFERENCE_RUN / 'summary.json')
+    print('Analysis status:', estimator_report.get('status', 'unreported'))
+    physical_failures = estimator_report.get('physical_failure_count', estimator_report.get('physical_failures'))
+    if physical_failures is not None:
+        print('Retained physical-limit records:', len(physical_failures) if isinstance(physical_failures, (list, dict)) else physical_failures)
+if (INFERENCE_RUN / 'metrics.csv').exists():
+    from nr2d.inference_study import recompute_comparison
+    estimator_rows = load_metrics(INFERENCE_RUN)
+    split_counts = {split: len({r['history_id'] for r in estimator_rows if r.get('split') == split})
+                    for split in sorted({r.get('split', 'unspecified') for r in estimator_rows})}
+    print('Independent histories by split:', split_counts)
+    print('Recorded training sizes:', sorted({r['training_size'] for r in estimator_rows
+                                            if str(r.get('training_size', '')) not in ('', '0', '-1')}))
+    print('Recorded training seeds:', sorted({r['training_seed'] for r in estimator_rows
+                                            if str(r.get('training_seed', '')) not in ('', '0', '-1')}))
+    forecast_audits = [r for r in estimator_rows if isinstance(r.get('physics'), dict)]
+    forecast_overruns = [r for r in forecast_audits if r['physics'].get('passed') is False]
+    print('Retained forecast-limit records:', len(forecast_overruns), '/', len(forecast_audits), 'audited predictions')
+    print('Histories with a forecast-limit record:', len({(r['split'], r['history_id']) for r in forecast_overruns}))
+    inference_dashboard = InferenceDashboard(INFERENCE_RUN, recompute=recompute_comparison)
+    display(inference_dashboard.widget)
+else:
+    print('No recorded estimator study is present. Generate it with python -m nr2d.inference_study --help.')
+"""),
+M(r"""**Information, cost and uncertainty.** The figures below report the new test batch. Per-history means first
+average noise repeats and training seeds; plotted intervals bootstrap complete histories. Training-seed variation
+is recorded separately in the run report. Missing combinations are marked unrun, and failed rows remain in the raw metrics.
+
+For VI, the point curve propagates the posterior mean coefficient state. Its band propagates posterior samples;
+it is not a posterior-predictive-mean curve. The 90% interval for the noiseless force response is distinct from
+an interval that also includes observation noise. Full-horizon coverage includes zero-force flight; contact-only
+coverage is shown separately when recorded. The final panel deliberately shows the lowest recorded coverage
+as a post-hoc failure diagnostic, not as the prespecified representative response.
+
+The intervals use 16 Monte Carlo members. An independent Gaussian reference with the same linear quantiles
+has 80.66% coverage for a nominal 90% interval, illustrating finite-sample bias. This is not a distribution-free
+correction for the FEM results. Analytic coefficient intervals are unaffected; frozen primary metrics are unchanged.
+
+Coefficient coverage is evaluated against the declared projection of the simulator field. It does not establish
+coverage of a unique physical internal coordinate. Accuracy is measured on the independent test histories;
+the latency plot uses a separate serial warm phase-compute timing suite when available. This excludes context setup
+and experiment I/O. Parallel evaluation times are labeled as such. Application cold/resident-warm totals are recorded
+in `latency_startup.csv`; offline training costs are separate.
+"""),
+C("""if (INFERENCE_RUN / 'metrics.csv').exists():
+    for figure_name in ['02_information_by_estimator', '03_accuracy_and_latency', '04_probability_checks']:
+        figure_path = INFERENCE_RUN / 'figures' / (figure_name + '.png')
+        if figure_path.exists():
+            display(Image(filename=str(figure_path)))
+    display(Markdown('Run report: [results and interpretation](' +
+                     '../runs/inference/methods_20261030/RESULTS.md). '
+                     'The default replay does not retrain models or regenerate test histories.'))
+    print('Updated notebook elapsed: %.2f s' % (time.perf_counter()-NOTEBOOK_START))
+"""),
+])
 nb.metadata.kernelspec = {"display_name": "NR 2D (Docker)", "language": "python", "name": "nr-spatial-state"}
 nb.metadata.language_info = {"name": "python", "version": "3.11.9"}
 nbf.validate(nb)

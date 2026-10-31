@@ -1,0 +1,41 @@
+{
+  "selected": {
+    "steps": 8,
+    "scale_multiplier": 0.3,
+    "lr": 0.05
+  },
+  "scores": [
+    {
+      "candidate": {
+        "steps": 8,
+        "scale_multiplier": 0.3,
+        "lr": 0.05
+      },
+      "force_rmse_mN": 1.5613985259639123,
+      "failed": 0,
+      "median_vi_seconds": 2.327201790001709
+    },
+    {
+      "candidate": {
+        "steps": 16,
+        "scale_multiplier": 0.3,
+        "lr": 0.05
+      },
+      "force_rmse_mN": 1.964909848104326,
+      "failed": 0,
+      "median_vi_seconds": 2.8587821319815703
+    },
+    {
+      "candidate": {
+        "steps": 16,
+        "scale_multiplier": 1.0,
+        "lr": 0.05
+      },
+      "force_rmse_mN": 8.336918502533669,
+      "failed": 0,
+      "median_vi_seconds": 3.1930926290224306
+    }
+  ],
+  "source": "3 separate calibration histories;3 prespecified conditions; Slow press only",
+  "frozen_utc": "2026-10-30T23:54:19.124669+00:00"
+}

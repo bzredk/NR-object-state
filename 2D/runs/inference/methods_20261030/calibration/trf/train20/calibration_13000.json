@@ -1,0 +1,316 @@
+{
+  "parent": "calibration_13000",
+  "candidate": {
+    "name": "train20",
+    "max_nfev": 20,
+    "regularization": 0.0,
+    "initial": "train_mean"
+  },
+  "rows": [
+    {
+      "window": "0.0",
+      "channels": "basic",
+      "force_rmse_mN": 7.531767431834442,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.011397712980397046,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.04124681773789506,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.0",
+      "channels": "lateral",
+      "force_rmse_mN": 0.5854686947639257,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.054794505005702376,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 5,
+      "njev": 5,
+      "optimality": 9.063082401932743e-10,
+      "cost": 3.093556485066114,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.063175427966893,
+        0.30331494270616294,
+        0.0481811060066994,
+        0.06823390058437526,
+        0.3369730527870643,
+        0.0454370631786104
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.2",
+      "channels": "basic",
+      "force_rmse_mN": 7.519543900733412,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.1699475340428762,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.5111348134924173,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.2",
+      "channels": "lateral",
+      "force_rmse_mN": 0.8129405757970117,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 1.3264942719833925,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 6,
+      "njev": 6,
+      "optimality": 1.583073251982909e-08,
+      "cost": 1.8302158261334533,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.04863370734196802,
+        0.29468071772790116,
+        0.050431941641177175,
+        0.060150734164791164,
+        0.35029569210352224,
+        0.05702841209185587
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.8",
+      "channels": "basic",
+      "force_rmse_mN": 0.28919414316003816,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 8.199528591998387,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 4.639188616376702e-07,
+      "cost": 0.6602942086563874,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        7.905590654109486e-12,
+        7.065815717364616e-08,
+        0.4978116519908014,
+        0.16231994201856842,
+        0.1943412377974783,
+        0.013804512700648483
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.8",
+      "channels": "lateral",
+      "force_rmse_mN": 0.35655592953281207,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 8.288657062978018,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 8.34728236751808e-06,
+      "cost": 1.9231277653904113,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        1.6735269220237557e-06,
+        0.8384474895946963,
+        5.038883496540193e-11,
+        0.07777143590729599,
+        0.13774378598002657,
+        0.06273755268014787
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "contact",
+      "channels": "basic",
+      "force_rmse_mN": 0.5761406315961677,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.515789066965226,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 13,
+      "njev": 13,
+      "optimality": 0.0006018042927062238,
+      "cost": 0.6441519607915221,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        2.4999979789508497,
+        0.2336502571203704,
+        0.0001968834378460749,
+        1.5307686831483936e-06,
+        0.041556567373962044,
+        0.17486202807528334
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "contact",
+      "channels": "lateral",
+      "force_rmse_mN": 0.4833232177808838,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.2625110609806143,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 12,
+      "njev": 12,
+      "optimality": 1.7186731577407542e-07,
+      "cost": 1.826509046241244,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        1.4655595126806478,
+        0.5379927356572102,
+        3.6552594224256293e-13,
+        3.30447207236874e-14,
+        0.18929517468660192,
+        0.08767728476253066
+      ],
+      "settings": {
+        "name": "train20",
+        "max_nfev": 20,
+        "regularization": 0.0,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    }
+  ],
+  "shared_future_commands": true
+}

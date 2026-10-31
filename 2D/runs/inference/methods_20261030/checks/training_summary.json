@@ -1,0 +1,392 @@
+{
+  "status": "reviewed",
+  "run": "/workspaces/NR-object-state/2D/runs/inference/methods_20261030",
+  "device": "CPU",
+  "torch": "2.8.0+cpu",
+  "threads_per_fit": 1,
+  "metric": "Coefficient validation MSE on 16 held-out physical histories; not future-force prediction error",
+  "independent_unit": "Complete physical loading history; windows, noise draws and training seeds are not new physical samples",
+  "table": [
+    {
+      "kind": "gru",
+      "training_histories": 32,
+      "parameter_count": 4614,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0011352875735610723,
+          "training_wall_seconds": 66.641354454041,
+          "epochs_completed": 183,
+          "best_epoch": 142,
+          "checkpoint": "models/gru_n32_s11.pt",
+          "checkpoint_sha256": "cd25e3d390876e04f1f34b99e134c3542819cf91f98190ec08bf145b87441acd"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.0010592608014121652,
+          "training_wall_seconds": 77.90646317001665,
+          "epochs_completed": 248,
+          "best_epoch": 207,
+          "checkpoint": "models/gru_n32_s23.pt",
+          "checkpoint_sha256": "98ee4e818c018630a441c372227ce31ed56b067d8ef8a14e6fafa6e622cdec1f"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0010993995238095522,
+          "training_wall_seconds": 57.81711757997982,
+          "epochs_completed": 174,
+          "best_epoch": 133,
+          "checkpoint": "models/gru_n32_s37.pt",
+          "checkpoint_sha256": "5fc3bc52c59978833b912880d3d6ad9d494e597323cfc54e163b9a37a0422c53"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.0010979826329275966,
+      "mean_training_wall_seconds": 67.45497840134583
+    },
+    {
+      "kind": "gru",
+      "training_histories": 128,
+      "parameter_count": 4614,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0008705470245331526,
+          "training_wall_seconds": 273.2649612390087,
+          "epochs_completed": 229,
+          "best_epoch": 188,
+          "checkpoint": "models/gru_n128_s11.pt",
+          "checkpoint_sha256": "98dc40f398b3f296c75d573c2e12ebe287de0132e7f83f60484bd9fd5fbcb506"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.0008366475813090801,
+          "training_wall_seconds": 259.09090714203194,
+          "epochs_completed": 212,
+          "best_epoch": 171,
+          "checkpoint": "models/gru_n128_s23.pt",
+          "checkpoint_sha256": "a799ba11b3365bfed4ada8ccc36a6fef311abec91ee3e11b0b6d947f2e9da73c"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0007927960250526667,
+          "training_wall_seconds": 369.68171379104024,
+          "epochs_completed": 300,
+          "best_epoch": 297,
+          "checkpoint": "models/gru_n128_s37.pt",
+          "checkpoint_sha256": "2a692fd29e6022d98646598207c23bb8652c80192f6148ee3aa40b69e8d48d23"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.0008333302102982998,
+      "mean_training_wall_seconds": 300.6791940573603
+    },
+    {
+      "kind": "rme",
+      "training_histories": 32,
+      "parameter_count": 59206,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0011144770542159677,
+          "training_wall_seconds": 142.11707983596716,
+          "epochs_completed": 183,
+          "best_epoch": 142,
+          "checkpoint": "models/rme_n32_s11.pt",
+          "checkpoint_sha256": "c02cb59d599a7e1318223ec3930099173d6cb6744349f2b6b660e7eaa93aa81b"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.001063040690496564,
+          "training_wall_seconds": 205.63030181196518,
+          "epochs_completed": 261,
+          "best_epoch": 220,
+          "checkpoint": "models/rme_n32_s23.pt",
+          "checkpoint_sha256": "aed83ef6e808c42c85371db44b52fd15826ff6253698684874b89549b4ed5d02"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0011474104830995202,
+          "training_wall_seconds": 134.32036648201756,
+          "epochs_completed": 175,
+          "best_epoch": 134,
+          "checkpoint": "models/rme_n32_s37.pt",
+          "checkpoint_sha256": "936ebf792f55ef88ec63d47f0e88a31999a6c3d5f63c5ffcc36793ed9f96901b"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.001108309409270684,
+      "mean_training_wall_seconds": 160.68924937664997
+    },
+    {
+      "kind": "rme",
+      "training_histories": 128,
+      "parameter_count": 59206,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0009170656558126211,
+          "training_wall_seconds": 402.6914483740111,
+          "epochs_completed": 165,
+          "best_epoch": 124,
+          "checkpoint": "models/rme_n128_s11.pt",
+          "checkpoint_sha256": "e10c2a39734ac156408db40ef68f12b363d3ab6a687d9a1368961e98fbf82468"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.00093307119095698,
+          "training_wall_seconds": 358.8743485539453,
+          "epochs_completed": 138,
+          "best_epoch": 97,
+          "checkpoint": "models/rme_n128_s23.pt",
+          "checkpoint_sha256": "9363094910269e619ed003b65c042bd6b09ae277d2c971f7af1e1f75792fbc70"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0009260212536901236,
+          "training_wall_seconds": 439.8703297029715,
+          "epochs_completed": 175,
+          "best_epoch": 134,
+          "checkpoint": "models/rme_n128_s37.pt",
+          "checkpoint_sha256": "f0f5c3d37e9c213c01feec8c72f50e467a781c8a528f9647dc0a55dcc8dda8c6"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.0009253860334865749,
+      "mean_training_wall_seconds": 400.478708876976
+    },
+    {
+      "kind": "mlp",
+      "training_histories": 32,
+      "parameter_count": 5382,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0010530712315812707,
+          "training_wall_seconds": 6.121685524994973,
+          "epochs_completed": 300,
+          "best_epoch": 281,
+          "checkpoint": "models/mlp_n32_s11.pt",
+          "checkpoint_sha256": "4e20a39e9181515088f56434b5ec6e78129f911fd5b54a7ba4f013a690512a8d"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.0010399356251582503,
+          "training_wall_seconds": 5.027612554025836,
+          "epochs_completed": 293,
+          "best_epoch": 252,
+          "checkpoint": "models/mlp_n32_s23.pt",
+          "checkpoint_sha256": "977d3f1e0014bbbe4850542ee73c3620e90b3f19684d37f6caa9b74d48b008b2"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0010153475450351834,
+          "training_wall_seconds": 5.364361603045836,
+          "epochs_completed": 300,
+          "best_epoch": 259,
+          "checkpoint": "models/mlp_n32_s37.pt",
+          "checkpoint_sha256": "33cd61d89a64d2ad2a546c88b928050e149f7b3963242afe60f4e2e117f54a9b"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.0010361181339249015,
+      "mean_training_wall_seconds": 5.504553227355548
+    },
+    {
+      "kind": "mlp",
+      "training_histories": 128,
+      "parameter_count": 5382,
+      "learning_rate": 0.003,
+      "three_seed_results": [
+        {
+          "seed": 11,
+          "coefficient_validation_mse": 0.0009941707830876112,
+          "training_wall_seconds": 13.193182609044015,
+          "epochs_completed": 161,
+          "best_epoch": 120,
+          "checkpoint": "models/mlp_n128_s11.pt",
+          "checkpoint_sha256": "454b0e1a07f1e2cdd074df9f60b6e27cb9d9aab4dc3a703e68da97c29153f55d"
+        },
+        {
+          "seed": 23,
+          "coefficient_validation_mse": 0.0010344003094360232,
+          "training_wall_seconds": 11.068008045025636,
+          "epochs_completed": 118,
+          "best_epoch": 77,
+          "checkpoint": "models/mlp_n128_s23.pt",
+          "checkpoint_sha256": "f9ec4879aed7352903d66f72112e31399a62c4083f215e080d50a5b07d5275d2"
+        },
+        {
+          "seed": 37,
+          "coefficient_validation_mse": 0.0008554016822017729,
+          "training_wall_seconds": 25.44880682899384,
+          "epochs_completed": 300,
+          "best_epoch": 299,
+          "checkpoint": "models/mlp_n128_s37.pt",
+          "checkpoint_sha256": "4a0187d50adc93ff07937a0f7293a5b2d86848bb3c504aef301a8ca27ddd98ff"
+        }
+      ],
+      "mean_coefficient_validation_mse": 0.0009613242582418025,
+      "mean_training_wall_seconds": 16.569999161021162
+    }
+  ],
+  "selected_sizes": {
+    "gru": 128,
+    "rme": 128,
+    "mlp": 128
+  },
+  "total_training_elapsed_wall_seconds": 1197.640527453972,
+  "main_comparison_unique_fit_count": 21,
+  "total_actual_scout_and_main_fit_count": 23,
+  "sum_final_comparison_fit_wall_seconds": 3167.9663426911575,
+  "timing_note": "Per-fit wall durations overlap under parallel execution and are not CPU time. The 72.67 s equal-label MLP correction overlaps total elapsed; do not add it again. Overfit diagnostics and data generation are separate.",
+  "overfit_before_head_initialization": {
+    "gru": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 96,
+      "constant_coefficient_baseline_mse": 0.011234351433813572,
+      "best_mse": 0.0035883216187357903,
+      "best_epoch": 199,
+      "wall_seconds": 8.86285745195346,
+      "ratio_to_constant": 0.3194062104854158
+    },
+    "rme": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 96,
+      "constant_coefficient_baseline_mse": 0.011234351433813572,
+      "best_mse": 0.09885407984256744,
+      "best_epoch": 2,
+      "wall_seconds": 25.993252489017323,
+      "ratio_to_constant": 8.79926895868975
+    },
+    "mlp": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 24,
+      "constant_coefficient_baseline_mse": 0.0005186827038414776,
+      "best_mse": 0.000645683438051492,
+      "best_epoch": 199,
+      "wall_seconds": 0.36012293997919187,
+      "ratio_to_constant": 1.2448524565585455
+    }
+  },
+  "overfit_after_head_initialization": {
+    "gru": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 96,
+      "constant_coefficient_baseline_mse": 0.011234351433813572,
+      "best_mse": 0.0005949099431745708,
+      "best_epoch": 179,
+      "wall_seconds": 9.068989108025562,
+      "ratio_to_constant": 0.052954542741469574
+    },
+    "rme": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 96,
+      "constant_coefficient_baseline_mse": 0.011234351433813572,
+      "best_mse": 0.000508632161654532,
+      "best_epoch": 198,
+      "wall_seconds": 19.402684172033332,
+      "ratio_to_constant": 0.04527472410411088
+    },
+    "mlp": {
+      "diagnostic_only": true,
+      "history_count": 4,
+      "example_count": 96,
+      "constant_coefficient_baseline_mse": 0.011234351433813572,
+      "best_mse": 0.0008619936998002231,
+      "best_epoch": 194,
+      "wall_seconds": 1.3492702650255524,
+      "ratio_to_constant": 0.07672839014148713,
+      "input_transformation": "First valid frame of every window; same complete window-start label set as GRU/RME"
+    }
+  },
+  "overfit_comparison_note": "Before-initialization MLP used 24 snapshot-subset examples; after uses all 96 labels. Its before/after difference therefore does not isolate initialization. GRU and RME use the same 96 examples before/after.",
+  "physical_data": [
+    {
+      "split": "calibration",
+      "independent_histories": 8,
+      "examples": 192,
+      "generation_wall_seconds": 2.8279023080249317,
+      "failure_count": 0,
+      "dataset_sha256": "88fd996790353b5b2ff882336dd270afc998559c269c5c78402e1f6e6f2ac032"
+    },
+    {
+      "split": "pilot",
+      "independent_histories": 8,
+      "examples": 192,
+      "generation_wall_seconds": 2.883287634991575,
+      "failure_count": 0,
+      "dataset_sha256": "020702b1604632292727cc7adcf2b11579a6bc37a3ab163be5167c9cb9749966"
+    },
+    {
+      "split": "train",
+      "independent_histories": 128,
+      "examples": 3072,
+      "generation_wall_seconds": 35.12362474104157,
+      "failure_count": 2,
+      "dataset_sha256": "23c8dbd5277033df2798abaab75f3ef50cec8996249ef9a916ef661811bb8bbc"
+    },
+    {
+      "split": "validation",
+      "independent_histories": 16,
+      "examples": 384,
+      "generation_wall_seconds": 4.8099299860186875,
+      "failure_count": 1,
+      "dataset_sha256": "64213e1888041d2f996ec3d1eb8fa9a0e6bb6785943d553e38ecae2853b916aa"
+    }
+  ],
+  "retained_physical_overruns": [
+    {
+      "history_id": "train_10070",
+      "stage": "physics",
+      "kind": "limit_exceeded",
+      "max_body_balance_N": 3.80607486152873e-09,
+      "max_tool_balance_N": 3.8060736845188514e-09,
+      "max_penetration_m": 5.061542529154574e-06,
+      "max_strain": 0.04552814813810655,
+      "passed": false
+    },
+    {
+      "history_id": "train_10074",
+      "stage": "physics",
+      "kind": "limit_exceeded",
+      "max_body_balance_N": 5.682824683050924e-09,
+      "max_tool_balance_N": 5.682824041203238e-09,
+      "max_penetration_m": 5.029799258572773e-06,
+      "max_strain": 0.045875258815168456,
+      "passed": false
+    },
+    {
+      "history_id": "validation_12000",
+      "stage": "physics",
+      "kind": "limit_exceeded",
+      "max_body_balance_N": 3.0828923129611052e-09,
+      "max_tool_balance_N": 3.082892294339933e-09,
+      "max_penetration_m": 5.000315112375442e-06,
+      "max_strain": 0.045140733714061194,
+      "passed": false
+    }
+  ],
+  "audit_passes": [
+    "All 18 checkpoints, hashes, full label counts, training-only means, validation scales and selected sizes match the saved inputs",
+    "The four physical-history seed sets are disjoint; all labels/inputs are finite, padding and disabled side channels are zero"
+  ],
+  "information_contract": {
+    "shared_labels": "Every method trains on the same privileged six-coefficient projection labels at the window START",
+    "mlp": "First valid frame of every shared window; full label set retained. Deployment comparison is 0 s only",
+    "selection": "Learning rate, early stopping and 32/128-history choice use validation only; no final-test evidence is claimed here",
+    "prior": "Head biases use training-only pooled label means. TRF's condition-specific training prior is data-matched but is not the same numerical initialization. Neural prior scales use validation logit residual RMS, then calibration selects a multiplier",
+    "projection": "Bounded least squares in the volume-weighted D strain norm with unit-modulus weighting. Branch moduli are not included, so this is not a total-free-energy metric"
+  },
+  "limits": [
+    "Validation reused for early stopping, LR/size selection and prior-residual scales; scales are empirical, not an independent calibration guarantee",
+    "All data share one synthetic material, geometry and loading family. Absolute time is a deployed causal input; schedule-based priors may help within this scope",
+    "Complete dataset cache identity records design/physics, while original source hashes are provenance. Cache replay is not an automatic assertion that current source code is numerically equivalent",
+    "Three marginal penetration overruns are retained and must be reported; they do not count as successful passes of the 5 micrometer criterion"
+  ]
+}

@@ -6,7 +6,7 @@ A circular indenter loads a viscoelastic body, releases it and makes contact aga
 
 ## Run
 
-1. Open the repository in VS Code and choose **Dev Containers: Reopen in Container**.
+1. Open the repository in VS Code and choose **Dev Containers: Rebuild and Reopen in Container** to include the learning dependencies.
 2. Open [spatial_2d_hidden_state.ipynb](notebooks/spatial_2d_hidden_state.ipynb).
 3. Select the container's **Python 3.11.9** and **Run All**.
 
@@ -16,13 +16,38 @@ Run All computes one fresh spatial trajectory and replays recorded comparisons. 
 
 ## Results
 
+### Auxiliary methods
+
+TRF remains the main physics-based estimator. Two auxiliary methods estimate the same window-start state before the shared FEM predicts its response:
+
+- **GRU:** maps an observation window directly to state coefficients, reducing online fitting cost.
+- **RME-inspired VI:** refines a learned state prior using the FEM observation likelihood and samples possible future responses.
+
+The [completed comparison](runs/inference/methods_20261030/RESULTS.md) uses 24 fresh test histories, three noise repeats and three training seeds. The previous 24 histories are reanalyzed separately.
+
+| Method | Force RMSE, mN | Warm application time, s |
+| --- | ---: | ---: |
+| Calibrated TRF | 0.197 | 4.400 |
+| GRU | 0.437 | 0.725 |
+| RME-inspired VI | 0.605 | 17.344 |
+
+Errors use Slow press on the new test batch with lateral sensing and 0.8 s history. Timings use one fixed pilot case, CPU batch one and one thread; VI includes 16 posterior rollouts. GRU is faster but less accurate here; VI does not improve on calibrated TRF.
+
+![Estimator, sensor and history comparison](runs/inference/methods_20261030/figures/02_information_by_estimator.png)
+
+Current lateral shape and contact/recovery history remain useful, while their measured gains depend on the estimator and training prior. Weak-window predictions can come almost entirely from that prior. Probability checks distinguish state, force and measurement uncertainty and quantify the limitations of 16-sample intervals.
+
+[Section 6 in the Notebook](notebooks/spatial_2d_hidden_state.ipynb) · [Protocol and commands](docs/INFERENCE_STUDY.md) · [Configuration](configs/inference_study.json) · [RME paper/code check](docs/RME_ADAPTATION.md)
+
+Git includes complete metrics, model weights and the first prescribed test history for interactive replay. The full raw archive stays local. The [publication check](runs/inference/methods_20261030/verification/publication/validation.json) passed 23 tests, clean-kernel Run All and replay/recomputation callbacks using only tracked files in Docker.
+
 ### Sensor channels and contact history
 
-The [new comparison](runs/information/channels_contact_20261026/RESULTS.md) uses 24 independent histories and three noise draws per history. For Slow press, current lateral shape reduces mean force error from 11.50 to 2.20 mN; recent lateral history reduces it to 1.29 mN over 0.2 s and 0.23 mN over 0.8 s. The same estimates also predict Fast press.
+The [recorded comparison](runs/information/channels_contact_20261026/RESULTS.md) uses 24 independent histories and three noise draws per history. With the original observer, current lateral shape reduces mean Slow-press force error from 11.50 to 2.20 mN; recent lateral history reduces it to 1.29 mN over 0.2 s and 0.23 mN over 0.8 s. The same estimates also predict Fast press.
 
 ![History duration, contact data and prediction error](runs/information/channels_contact_20261026/figures/02_window_and_contact.png)
 
-Waiting contains useful recovery information when lateral sensing is enabled. Without it, earlier contact plus motion propagation is much more informative. [Section 5 of the Notebook](notebooks/spatial_2d_hidden_state.ipynb) provides sensor, window and future-action controls. The original pilot below is retained; its noisy-short-window loss does not generalize to the new batch.
+For this observer, lateral recovery measurements help during waiting; earlier contact plus motion propagation helps when lateral sensing is absent. [Section 5 of the Notebook](notebooks/spatial_2d_hidden_state.ipynb) provides sensor, window and future-action controls. These gains depend on the estimator and its initialization. The original pilot below is retained; its noisy-short-window loss did not generalize to this 24-history batch.
 
 ### Pilot results
 

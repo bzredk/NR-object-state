@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "mode": "full",
+  "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+  "python": "/usr/local/bin/python",
+  "environment": {
+    "python": "3.11.9",
+    "platform": "Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "processor": "",
+    "packages": {
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "matplotlib": "3.11.0",
+      "pillow": "12.3.0",
+      "ipywidgets": "8.1.8",
+      "ipympl": "0.10.0",
+      "ipykernel": "7.2.0",
+      "nbformat": "5.10.4",
+      "nbclient": "0.10.4"
+    },
+    "git_head": "1c14b1523a78472e7c0ab81bd29c5648a2fbe7b0",
+    "git_status": "M README.md\n M docs/CONTAINER.md\n M docs/DESIGN.md\n M docs/README.md\n M environment/.dockerignore\n M environment/Dockerfile\n M notebooks/spatial_2d_hidden_state.ipynb\n M tools/README.md\n M tools/build_spatial_notebook.py\n?? configs/inference_study.json\n?? docs/INFERENCE_STUDY.md\n?? docs/RME_ADAPTATION.md\n?? environment/requirements-learning.txt\n?? runs/inference/\n?? src/nr2d/inference_analysis.py\n?? src/nr2d/inference_controls.py\n?? src/nr2d/inference_data.py\n?? src/nr2d/inference_display.py\n?? src/nr2d/inference_physics.py\n?? src/nr2d/inference_study.py\n?? src/nr2d/learning_models.py\n?? src/nr2d/variational.py\n?? tests/test_learning_models.py\n?? tests/test_variational.py\n?? tools/check_monte_carlo_metrics.py\n?? tools/verify_inference_interactions.py\n?? ../research/presentations/10.2/node_modules\n?? ../research/presentations/10.2/output/2d-contact-once.gif",
+    "source_sha256": {
+      "__init__.py": "f21b01a5e4f6428eb3ccee4252277a9aa8a757ff76505835db6c7767421d71db",
+      "checks.py": "816180e1cc3951399bb75279724814f80c101e174fff62f9e9a74056adaf480f",
+      "cli.py": "ff1cb7c433cf53e42acb7f448f75e4abe155072e69c2aa15797b34d120719a29",
+      "estimators.py": "dd67e5e14ee0977a4eb089f3eb7c2e21ba2c6e15e5225a98b2136bcea316dd53",
+      "experiments.py": "9a70b2603ae36c49adce46dc0c92190069edfc52acf0d5104801d24d7c75c34b",
+      "inference_analysis.py": "59cadaa91393e4aa8dc9a4bb9dbebc89cd7a4dd9f615a9c2c1eff6c693f8d9ba",
+      "inference_controls.py": "59e6bdf82d60838e2e96c1cd1b426a2ddde73ac7933f913b82826ca1bd0a2d9e",
+      "inference_data.py": "477f3ce04d848f88252a0f8f06f972d58837f576c9dffd7a7b11670174c178d8",
+      "inference_display.py": "4c8fe7fa829352708bab9e081d3ada36ce2e497354daf4a22c9f73646d547b08",
+      "inference_physics.py": "447652babd595f9d572d753bb5817164f617c6ca37151555376d84808162831a",
+      "inference_study.py": "4749de4140f46dc6533b80b0c3af0f54118b61041cbec6d1b89ab9f4fce24bb3",
+      "information.py": "c10029b0d01dc6cbcba109512dee45ca80ae22f05b8579464780712812b5c996",
+      "learning_models.py": "0c181d29c4d6a928a265d909a205bba43518d59a055e5fd74d69c70eedf860c5",
+      "physics.py": "3d64e0696aa4c0637f1e35723888b024bc7f75ef2d6c4650b5132344fb92f10e",
+      "plotting.py": "5b4942aee9ae4edeae007ae754221f61ed57589b7179d124418fbebc4c4ee744",
+      "protocols.py": "c99ec8b332f552e0b5fa8c205b4d35dda57605f82c1722d95a7d5921f148e6fd",
+      "variational.py": "ad3ec8167fcd4369ff2b72314bc10fc4267b6fe6bf434c5c63cd9ef17ed4123d",
+      "widgets.py": "06c8b9344a819efd3dbdb58bdea7cf60f883e4003bb667a8c0a4419ebae6e9ad"
+    }
+  },
+  "device": "CPU",
+  "steps": [
+    {
+      "step": "pip_check",
+      "command": [
+        "/usr/local/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.778603243001271
+    },
+    {
+      "step": "pytest",
+      "command": [
+        "/usr/local/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "--junitxml=runs/inference/methods_20261030/verification/release/pytest.xml"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 24.932979531993624
+    },
+    {
+      "step": "pip_freeze",
+      "command": [
+        "/usr/local/bin/python",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.5783508170279674
+    },
+    {
+      "step": "notebook",
+      "command": [
+        "/usr/local/bin/python",
+        "tools/execute_spatial_notebook.py",
+        "--output",
+        "runs/inference/methods_20261030/verification/release/executed.ipynb",
+        "--record",
+        "runs/inference/methods_20261030/verification/release/notebook.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 11.557697655982338
+    },
+    {
+      "step": "callbacks",
+      "command": [
+        "/usr/local/bin/python",
+        "tools/verify_spatial_interactions.py",
+        "--record",
+        "runs/inference/methods_20261030/verification/release/callbacks.json"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 14.441931829962414
+    }
+  ],
+  "wall_seconds": 122.22583030600799
+}

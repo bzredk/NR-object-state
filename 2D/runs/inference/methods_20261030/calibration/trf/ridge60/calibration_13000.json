@@ -1,0 +1,316 @@
+{
+  "parent": "calibration_13000",
+  "candidate": {
+    "name": "ridge60",
+    "max_nfev": 60,
+    "regularization": 0.05,
+    "initial": "train_mean"
+  },
+  "rows": [
+    {
+      "window": "0.0",
+      "channels": "basic",
+      "force_rmse_mN": 7.531767431834442,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.01623204699717462,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.04124681773789506,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.0",
+      "channels": "lateral",
+      "force_rmse_mN": 0.479074455835181,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.09402394900098443,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 5.420531116328021e-09,
+      "cost": 3.0952559436503955,
+      "coefficient_start": [
+        0.06551295577401106,
+        0.3458270027767867,
+        0.06137797213058205,
+        0.07208043031459965,
+        0.41219314164482057,
+        0.06647753256110733
+      ],
+      "coefficients": [
+        0.06464886719407487,
+        0.3382027249435659,
+        0.03310334089140878,
+        0.069957910345313,
+        0.3966251484435718,
+        0.008438070709057152
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.2",
+      "channels": "basic",
+      "force_rmse_mN": 7.519543900733412,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.2068814659724012,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.5111348134924173,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.2",
+      "channels": "lateral",
+      "force_rmse_mN": 0.9155257431149484,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 1.8495872049825266,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 5.450705898043751e-11,
+      "cost": 1.834021191003514,
+      "coefficient_start": [
+        0.07013030404777965,
+        0.42493261280469596,
+        0.07272337632293391,
+        0.07335110888016061,
+        0.43085564603097737,
+        0.06950391982045867
+      ],
+      "coefficients": [
+        0.06577132432547692,
+        0.3844900890804668,
+        9.954904289404696e-10,
+        0.07139362726122112,
+        0.4175696320067407,
+        0.01631808709248748
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.8",
+      "channels": "basic",
+      "force_rmse_mN": 0.27129365783208376,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 8.733755189052317,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 9,
+      "njev": 9,
+      "optimality": 7.724370201228025e-08,
+      "cost": 0.6625971979974489,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        0.11705332046781355,
+        0.7582361469826293,
+        0.027817915234678213,
+        0.07429781021329702,
+        0.24410315006883518,
+        2.728989021780914e-06
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "0.8",
+      "channels": "lateral",
+      "force_rmse_mN": 0.3641019348213373,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 6.969218934013043,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 7,
+      "njev": 7,
+      "optimality": 1.4116406778716536e-07,
+      "cost": 1.9294420362579388,
+      "coefficient_start": [
+        0.12643727357408352,
+        0.7901843371801078,
+        0.09340749052888508,
+        0.08560957087183851,
+        0.29167679918464273,
+        0.02211780884424641
+      ],
+      "coefficients": [
+        0.10490255073753514,
+        0.7270576471811061,
+        0.04600694649878192,
+        0.04834623191809924,
+        0.20925333581637437,
+        0.02623369298744988
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "contact",
+      "channels": "basic",
+      "force_rmse_mN": 0.4470589771668927,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.188580477028154,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 9,
+      "njev": 9,
+      "optimality": 1.0609699278034651e-08,
+      "cost": 0.6569513021015795,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        0.11230030283806747,
+        0.8207270884071499,
+        0.06935479132557931,
+        0.10314987331244922,
+        0.3065312094330917,
+        4.404222033095205e-08
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    },
+    {
+      "window": "contact",
+      "channels": "lateral",
+      "force_rmse_mN": 0.42095897420078626,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 4.210403859964572,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 12,
+      "njev": 12,
+      "optimality": 2.120867628646869e-08,
+      "cost": 1.8366443941546284,
+      "coefficient_start": [
+        0.10226738879039961,
+        0.7937410151741157,
+        0.17477933091187423,
+        0.0744179151724893,
+        0.36325893256192404,
+        0.04559640189994892
+      ],
+      "coefficients": [
+        0.10594212890915831,
+        0.779476473981028,
+        0.0941120733749038,
+        0.07488767012345247,
+        0.3155170945972287,
+        1.9783717036881337e-06
+      ],
+      "settings": {
+        "name": "ridge60",
+        "max_nfev": 60,
+        "regularization": 0.05,
+        "initial": "train_mean"
+      },
+      "gradient": "implicit exact-FEM Jacobian",
+      "rescored_shared_commands": true
+    }
+  ],
+  "shared_future_commands": true
+}

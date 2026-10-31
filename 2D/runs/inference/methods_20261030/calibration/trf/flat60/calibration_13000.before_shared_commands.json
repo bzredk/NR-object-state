@@ -1,0 +1,307 @@
+{
+  "parent": "calibration_13000",
+  "candidate": {
+    "name": "flat60",
+    "max_nfev": 60,
+    "regularization": 0.0,
+    "initial": "flat"
+  },
+  "rows": [
+    {
+      "window": "0.0",
+      "channels": "basic",
+      "force_rmse_mN": 4.146376149532453,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.006941839004866779,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.04124681773789506,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.0",
+      "channels": "lateral",
+      "force_rmse_mN": 1.112666463404694,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.17997404601192102,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 23,
+      "njev": 11,
+      "optimality": 0.0004085747879546329,
+      "cost": 3.093556487977332,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        0.10582249303573195,
+        0.15727326630417748,
+        0.1425976701502061,
+        0.08056866542245501,
+        0.14380823660527287,
+        0.139370239775938
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.2",
+      "channels": "basic",
+      "force_rmse_mN": 5.419811882914536,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.14977407397236675,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 1,
+      "njev": 1,
+      "optimality": 0.0,
+      "cost": 0.5111348134924173,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.2",
+      "channels": "lateral",
+      "force_rmse_mN": 0.5346219341080746,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 0.6183667470468208,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 4,
+      "njev": 4,
+      "optimality": 1.7982399218049263e-08,
+      "cost": 1.8302158261334753,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        0.12998880810211225,
+        0.12998880810268756,
+        0.12998880810239613,
+        0.1530446988159782,
+        0.15304469874441776,
+        0.15304469879959653
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.8",
+      "channels": "basic",
+      "force_rmse_mN": 0.2804356514716906,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 6.701470451022033,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 9,
+      "njev": 9,
+      "optimality": 4.411010940598942e-08,
+      "cost": 0.6602941638346492,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        9.706460036779298e-09,
+        1.5184045887732943e-10,
+        0.4978116881741325,
+        0.14255097866652688,
+        0.22348411112599909,
+        2.4069732484921502e-08
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "0.8",
+      "channels": "lateral",
+      "force_rmse_mN": 0.35659337909467054,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 6.842145928007085,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 8,
+      "njev": 8,
+      "optimality": 0.0003441273734192551,
+      "cost": 1.92312777203539,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        3.3800266498247063e-06,
+        0.8384459088383718,
+        9.478922981356986e-07,
+        0.0776658063704558,
+        0.13780490575760648,
+        0.0627201706913503
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "contact",
+      "channels": "basic",
+      "force_rmse_mN": 0.5770542842365249,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.409915791999083,
+      "optimizer_status": "2",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 2.513013867268501e-06,
+      "cost": 0.6441514434577906,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        2.4999999999999694,
+        0.23398252496231525,
+        3.958278489276661e-09,
+        0.025243587270828243,
+        0.004253732776755982,
+        0.19254231323443052
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    },
+    {
+      "window": "contact",
+      "channels": "lateral",
+      "force_rmse_mN": 0.4833232944012216,
+      "encode_seconds": 0.0,
+      "vi_seconds": 0.0,
+      "fit_seconds": 3.282770825026091,
+      "optimizer_status": "1",
+      "optimizer_success": true,
+      "nfev": 10,
+      "njev": 10,
+      "optimality": 1.4453856504889071e-08,
+      "cost": 1.8265090462613403,
+      "coefficient_start": [
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12,
+        0.12
+      ],
+      "coefficients": [
+        1.4655606957558234,
+        0.5379923882175864,
+        9.109083164092214e-12,
+        4.54858003808529e-16,
+        0.18929503853747762,
+        0.0876773649579776
+      ],
+      "settings": {
+        "name": "flat60",
+        "max_nfev": 60,
+        "regularization": 0.0,
+        "initial": "flat"
+      },
+      "gradient": "implicit exact-FEM Jacobian"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Keep complete metrics and one prescribed replay; retain full raw runs locally.
+histories/*.npz
+!histories/test_20000.npz
+evaluation/*/*/
+!evaluation/test/test_20000/
+observations/*/
+!observations/test_20000/
+execution/*/
+interactive/
+latency_records/
+figures_pilot/
+smoke/
+verification/startup_fixture_check/
+verification/release/executed.ipynb
+verification/release/main.npz
+verification/release/spatial_process.gif

@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "utc": "2026-10-31T02:03:11.219885+00:00",
+  "scope": "Functional native ipympl widget callbacks; not a frontend mouse-click test or final scientific analysis",
+  "split": "test",
+  "history_id": "test_20000",
+  "cached_conditions": [
+    {
+      "channels": "basic",
+      "window": "0.0",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "0.0",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "0.2",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "0.2",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "0.8",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "0.8",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "contact",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "basic",
+      "window": "contact",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.0",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.0",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.2",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.2",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.8",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "0.8",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "contact",
+      "action": "Slow press",
+      "training_seed": 11,
+      "status": "passed"
+    },
+    {
+      "channels": "lateral",
+      "window": "contact",
+      "action": "Fast press",
+      "training_seed": 11,
+      "status": "passed"
+    }
+  ],
+  "independent_histories_available": 24,
+  "history_noise_units_available": 72,
+  "planned_independent_histories": 24,
+  "planned_history_noise_units": 72,
+  "all_planned_history_noise_units_available": true,
+  "seed_checks": [
+    {
+      "seed": 11,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    },
+    {
+      "seed": 23,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    },
+    {
+      "seed": 37,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    }
+  ],
+  "cursor_and_widget_canvas": true,
+  "real_recomputation": {
+    "output": "runs/inference/methods_20261030/interactive/20261031T020308701117Z",
+    "methods": [
+      "TRF calibrated",
+      "GRU"
+    ],
+    "channels": "basic",
+    "window": "0.0",
+    "action": "Slow press",
+    "published_metrics_sha256": "6014b5eb6b78a21c8bfa7e08a2452bfd41b1fdce4b15f87e8a8d30d2b63e6963",
+    "published_metrics_unchanged": true
+  },
+  "wall_seconds": 8.876084699004423
+}

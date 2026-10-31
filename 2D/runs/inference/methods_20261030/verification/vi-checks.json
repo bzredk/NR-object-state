@@ -1,0 +1,473 @@
+{
+  "physical_configuration": {
+    "nx": 24,
+    "ny": 12,
+    "width": 0.04,
+    "height": 0.02,
+    "thickness": 0.01,
+    "radius": 0.03,
+    "E_inf": 20000.0,
+    "E_fast": 40000.0,
+    "E_slow": 60000.0,
+    "nu": 0.35,
+    "tau_fast": 0.12,
+    "tau_slow": 0.9,
+    "tool_mass": 0.04,
+    "actuator_k": 5000.0,
+    "actuator_c": 12.0,
+    "penalty": 2000000000.0,
+    "dt": 0.01,
+    "clearance": 0.00015,
+    "newton_tol": 1e-08,
+    "newton_max": 35
+  },
+  "gradient_checks": [
+    {
+      "window": "0.0",
+      "lateral": true,
+      "variational_likelihood_gradient_norm": 4.222184404449717,
+      "finite_differences": [
+        {
+          "step": 0.01,
+          "directional_fd": 0.16993944681367168,
+          "directional_gradient": 0.16994444438758885,
+          "relative_error": 2.9407103804891127e-05,
+          "absolute_error": 4.997573917170373e-06,
+          "error_scaled_by_at_least_one": 4.997573917170373e-06
+        },
+        {
+          "step": 0.001,
+          "directional_fd": 0.16994439440765063,
+          "directional_gradient": 0.16994444438758885,
+          "relative_error": 2.9409574638335e-07,
+          "absolute_error": 4.9979938215871655e-08,
+          "error_scaled_by_at_least_one": 4.9979938215871655e-08
+        },
+        {
+          "step": 0.0001,
+          "directional_fd": 0.1699444438507669,
+          "directional_gradient": 0.16994444438758885,
+          "relative_error": 3.158808456137378e-09,
+          "absolute_error": 5.36821948005084e-10,
+          "error_scaled_by_at_least_one": 5.36821948005084e-10
+        }
+      ],
+      "contact_points_over_window": [
+        0
+      ],
+      "minimum_abs_gap_m": 0.00029232783669866196,
+      "projection": {
+        "relative_field_error": 0.014857416176917954,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "scope": "Local derivative at stated parameters; zero local sensitivity is not a global no-information proof."
+    },
+    {
+      "window": "0.2",
+      "lateral": true,
+      "variational_likelihood_gradient_norm": 306.80743065986064,
+      "finite_differences": [
+        {
+          "step": 0.01,
+          "directional_fd": -14.524751335915198,
+          "directional_gradient": -14.524575506864988,
+          "relative_error": 1.2105477480741855e-05,
+          "absolute_error": 0.0001758290502102966,
+          "error_scaled_by_at_least_one": 1.2105477480741855e-05
+        },
+        {
+          "step": 0.001,
+          "directional_fd": -14.524577264580785,
+          "directional_gradient": -14.524575506864988,
+          "relative_error": 1.2101665782722482e-07,
+          "absolute_error": 1.757715796912862e-06,
+          "error_scaled_by_at_least_one": 1.2101665782722482e-07
+        },
+        {
+          "step": 0.0001,
+          "directional_fd": -14.524575527161687,
+          "directional_gradient": -14.524575506864988,
+          "relative_error": 1.3974039650459484e-09,
+          "absolute_error": 2.0296699432265086e-08,
+          "error_scaled_by_at_least_one": 1.3974039650459484e-09
+        }
+      ],
+      "contact_points_over_window": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_abs_gap_m": 0.0002950613159601271,
+      "projection": {
+        "relative_field_error": 0.015061576371414129,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "scope": "Local derivative at stated parameters; zero local sensitivity is not a global no-information proof."
+    },
+    {
+      "window": "0.8",
+      "lateral": true,
+      "variational_likelihood_gradient_norm": 695.8371231405893,
+      "finite_differences": [
+        {
+          "step": 0.01,
+          "directional_fd": 11.52885959215837,
+          "directional_gradient": 11.528473109829687,
+          "relative_error": 3.352303196973811e-05,
+          "absolute_error": 0.00038648232868254695,
+          "error_scaled_by_at_least_one": 3.352303196973811e-05
+        },
+        {
+          "step": 0.001,
+          "directional_fd": 11.528477059528086,
+          "directional_gradient": 11.528473109829687,
+          "relative_error": 3.426036569321284e-07,
+          "absolute_error": 3.949698399452473e-06,
+          "error_scaled_by_at_least_one": 3.426036569321284e-07
+        },
+        {
+          "step": 0.0001,
+          "directional_fd": 11.52848494484715,
+          "directional_gradient": 11.528473109829687,
+          "relative_error": 1.0265891416298913e-06,
+          "absolute_error": 1.183501746382376e-05,
+          "error_scaled_by_at_least_one": 1.0265891416298913e-06
+        }
+      ],
+      "contact_points_over_window": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_abs_gap_m": 2.4230284213083708e-08,
+      "projection": {
+        "relative_field_error": 0.018442175259094324,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "scope": "Local derivative at stated parameters; zero local sensitivity is not a global no-information proof."
+    },
+    {
+      "window": "contact",
+      "lateral": true,
+      "variational_likelihood_gradient_norm": 740.0691061923765,
+      "finite_differences": [
+        {
+          "step": 0.01,
+          "directional_fd": 6.845578172703881,
+          "directional_gradient": 6.845145415152015,
+          "relative_error": 6.321709298304993e-05,
+          "absolute_error": 0.0004327575518665583,
+          "error_scaled_by_at_least_one": 6.321709298304993e-05
+        },
+        {
+          "step": 0.001,
+          "directional_fd": 6.845147606213686,
+          "directional_gradient": 6.845145415152015,
+          "relative_error": 3.2008976251491904e-07,
+          "absolute_error": 2.1910616716525055e-06,
+          "error_scaled_by_at_least_one": 3.2008976251491904e-07
+        },
+        {
+          "step": 0.0001,
+          "directional_fd": 6.84514702584238,
+          "directional_gradient": 6.845145415152015,
+          "relative_error": 2.3530398383012677e-07,
+          "absolute_error": 1.6106903650836557e-06,
+          "error_scaled_by_at_least_one": 2.3530398383012677e-07
+        }
+      ],
+      "contact_points_over_window": [
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        6,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        2
+      ],
+      "minimum_abs_gap_m": 1.8485636243091574e-08,
+      "projection": {
+        "relative_field_error": 0.025011812021721223,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "scope": "Local derivative at stated parameters; zero local sensitivity is not a global no-information proof."
+    },
+    {
+      "window": "0.2",
+      "lateral": false,
+      "variational_likelihood_gradient_norm": 0.0,
+      "finite_differences": [
+        {
+          "step": 0.01,
+          "directional_fd": 1.2229570245381183e-06,
+          "directional_gradient": -2.1024757758186283e-17,
+          "relative_error": 1.0000000000171918,
+          "absolute_error": 1.2229570245591431e-06,
+          "error_scaled_by_at_least_one": 1.2229570245591431e-06
+        },
+        {
+          "step": 0.001,
+          "directional_fd": 1.2228440482431324e-08,
+          "directional_gradient": -2.1024757758186283e-17,
+          "relative_error": 1.0000000017193327,
+          "absolute_error": 1.2228440503456082e-08,
+          "error_scaled_by_at_least_one": 1.2228440503456082e-08
+        },
+        {
+          "step": 0.0001,
+          "directional_fd": 1.4210854715202004e-10,
+          "directional_gradient": -2.1024757758186283e-17,
+          "relative_error": 0.14210856817677778,
+          "absolute_error": 1.421085681767778e-10,
+          "error_scaled_by_at_least_one": 1.421085681767778e-10
+        }
+      ],
+      "contact_points_over_window": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "minimum_abs_gap_m": 0.0002950613159601271,
+      "projection": {
+        "relative_field_error": 0.015061576371414129,
+        "basis_singular_values": [
+          4.355293580788435e-05,
+          3.39481915235857e-06,
+          9.094999843562849e-07
+        ],
+        "basis_rank": 3,
+        "coefficient_definition": "bounded volume/elastic-energy projection at window start"
+      },
+      "scope": "Local derivative at stated parameters; zero local sensitivity is not a global no-information proof."
+    }
+  ],
+  "cost_probe": [
+    {
+      "steps": 8,
+      "seconds": 7.195901166996919,
+      "likelihood_calls": 8,
+      "status": "fixed_budget_completed",
+      "first_loss": 2432.167634939048,
+      "last_preupdate_loss": 2510.786126498224,
+      "physical_prior_mean": [
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986
+      ],
+      "posterior_mean": [
+        0.18685082491290306,
+        0.18081137449163517,
+        0.17879060525388882,
+        0.17434299409695667,
+        0.1699712487399028,
+        0.174360732752106
+      ],
+      "first_adam_construction_in_process": true
+    },
+    {
+      "steps": 16,
+      "seconds": 14.615061146963853,
+      "likelihood_calls": 16,
+      "status": "fixed_budget_completed",
+      "first_loss": 2432.167634939048,
+      "last_preupdate_loss": -927.023758198793,
+      "physical_prior_mean": [
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986
+      ],
+      "posterior_mean": [
+        0.25461139619903517,
+        0.24734382235962926,
+        0.2491948047582907,
+        0.19823802378068345,
+        0.18429763917180425,
+        0.19299280329213322
+      ]
+    },
+    {
+      "steps": 32,
+      "seconds": 29.03968566696858,
+      "likelihood_calls": 32,
+      "status": "fixed_budget_completed",
+      "first_loss": 2432.167634939048,
+      "last_preupdate_loss": -983.7035672336933,
+      "physical_prior_mean": [
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986,
+        0.12640894082251986
+      ],
+      "posterior_mean": [
+        0.3654018869175848,
+        0.340173715833748,
+        0.32535059531287586,
+        0.16996174792520738,
+        0.14221014796961393,
+        0.14791307335043294
+      ]
+    }
+  ],
+  "cost_scope": "CPU,torch_threads=1,samefullFEM,calibration4000,lateral0.8s,oneMCsampleperstep,fixedcenter.12,latentpriorstd.35. Excludes encoding,post-windowreplay,futureprediction. This is not calibrated estimator accuracy.",
+  "zero_gradient_note": "Relative errors are not interpreted when the analytic directional derivative is zero; absolute errors and scaled errors are included. Central differences of the nonlinear KL have O(h^2) truncation error even at its stationary point."
+}

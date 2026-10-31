@@ -1,0 +1,115 @@
+{
+  "created_utc": "2026-10-31T01:58:08.972855+00:00",
+  "status": "completed",
+  "scope": "Analysis-only independent N(0,1) forecast/target reference; no robot histories, inference parameters, frozen intervals or primary scores are changed.",
+  "design": {
+    "independent_reference_draws": 200000,
+    "members": 16,
+    "seed": 20261030,
+    "batch_size": 20000,
+    "forecast_distribution": "Independent standard normal ensemble members",
+    "target_distribution": "Independent standard normal target for each ensemble",
+    "quantiles": [
+      0.05,
+      0.95
+    ],
+    "quantile_method": "numpy linear, matching the frozen study"
+  },
+  "results": {
+    "coverage": {
+      "mean": 0.806605,
+      "mc_standard_error": 0.0008831595380953821,
+      "mc_95_interval": [
+        0.8048740073053331,
+        0.8083359926946669
+      ],
+      "independent_reference_draws": 200000,
+      "difference_from_nominal_0.9": -0.093395
+    },
+    "width": {
+      "mean": 2.8114267191862616,
+      "mc_standard_error": 0.001232426445521835,
+      "mc_95_interval": [
+        2.809011163353039,
+        2.8138422750194843
+      ],
+      "independent_reference_draws": 200000
+    },
+    "empirical_crps": {
+      "mean": 0.5998339727440143,
+      "mc_standard_error": 0.0009716387493328264,
+      "mc_95_interval": [
+        0.597929560795322,
+        0.6017383846927066
+      ],
+      "independent_reference_draws": 200000
+    },
+    "fair_crps_diagnostic": {
+      "mean": 0.5645456962117669,
+      "mc_standard_error": 0.0009717876810513238,
+      "mc_95_interval": [
+        0.5626409923569062,
+        0.5664504000666275
+      ],
+      "independent_reference_draws": 200000
+    },
+    "analytic_normal_crps": {
+      "mean": 0.5644707815693403,
+      "mc_standard_error": 0.0009034618212660374,
+      "mc_95_interval": [
+        0.5626999963996588,
+        0.5662415667390217
+      ],
+      "independent_reference_draws": 200000
+    },
+    "empirical_minus_analytic": {
+      "mean": 0.035363191174673965,
+      "mc_standard_error": 0.00035962754593913494,
+      "mc_95_interval": [
+        0.03465832118463326,
+        0.03606806116471467
+      ],
+      "independent_reference_draws": 200000
+    },
+    "fair_minus_analytic": {
+      "mean": 7.491464242672363e-05,
+      "mc_standard_error": 0.000360024115240942,
+      "mc_95_interval": [
+        -0.0006307326234455226,
+        0.0007805619082989698
+      ],
+      "independent_reference_draws": 200000
+    },
+    "known_gaussian_interval_coverage": {
+      "mean": 0.89981,
+      "mc_standard_error": 0.0006713881688787541,
+      "mc_95_interval": [
+        0.8984940791889976,
+        0.9011259208110024
+      ],
+      "independent_reference_draws": 200000
+    }
+  },
+  "known_expectations": {
+    "analytic_predictive_crps": 0.5641895835477563,
+    "finite_empirical_crps": 0.5994514325194911,
+    "fair_ensemble_crps_diagnostic": 0.5641895835477563,
+    "empirical_crps_excess": 0.03526184897173477,
+    "known_gaussian_interval_coverage": 0.9,
+    "known_gaussian_interval_width": 3.2897072539029444,
+    "derivation": "E|X-Y|=2/sqrt(pi); the empirical pair correction is (M-1)/(M*sqrt(pi)), giving E[CRPS_M]=(1+1/M)/sqrt(pi). The fair pair correction excludes diagonal pairs and uses M*(M-1)."
+  },
+  "interpretation": [
+    "Finite-M linear empirical quantiles need not achieve their nominal predictive coverage even for an exactly correct Gaussian distribution.",
+    "This Gaussian reference is not a distribution-free correction for the nonlinear FEM force distribution, especially its zero-force atom; it cannot establish that all observed undercoverage is sampling bias.",
+    "The frozen empirical CRPS is a proper score of the reported empirical distribution. Its finite-ensemble expectation differs from the score of the underlying Gaussian; the fair-ensemble diagnostic is not substituted for the frozen primary score.",
+    "Coefficient coverage uses analytic transformed-Gaussian quantiles, so this empirical-quantile Monte Carlo coverage effect does not apply to it.",
+    "Monte Carlo standard errors here quantify independent synthetic reference draws; they do not increase the physical-history sample size of the research experiment."
+  ],
+  "runtime_seconds": 0.12961529201129451,
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6"
+  },
+  "script_sha256": "4442d91ba3c5e7869ecbd775f1d90bfd2e55ce14bfa14301fd0086e7a182bc42"
+}

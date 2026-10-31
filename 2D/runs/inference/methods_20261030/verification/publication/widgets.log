@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "history_id": "test_20000",
+  "cached_conditions": 16,
+  "seed_checks": [
+    {
+      "seed": 11,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    },
+    {
+      "seed": 23,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    },
+    {
+      "seed": 37,
+      "shared_baseline_rows": 1,
+      "learned_cache_available": true,
+      "status": "passed"
+    }
+  ],
+  "real_recomputation": {
+    "output": "runs/inference/methods_20261030/interactive/20261031T214324400482Z",
+    "methods": [
+      "TRF calibrated",
+      "GRU"
+    ],
+    "channels": "basic",
+    "window": "0.0",
+    "action": "Slow press",
+    "published_metrics_sha256": "6014b5eb6b78a21c8bfa7e08a2452bfd41b1fdce4b15f87e8a8d30d2b63e6963",
+    "published_metrics_unchanged": true
+  },
+  "wall_seconds": 9.5849696379737,
+  "record": "runs/inference/methods_20261030/verification/widget_test.json"
+}

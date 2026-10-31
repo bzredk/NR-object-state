@@ -1,0 +1,42 @@
+{
+  "scope": "Git-index-only checkout in disposable Linux Docker container",
+  "steps": [
+    {
+      "name": "dependencies",
+      "exit_code": 0,
+      "wall_seconds": 0.6835423319716938
+    },
+    {
+      "name": "tests",
+      "exit_code": 0,
+      "wall_seconds": 24.649273485003505
+    },
+    {
+      "name": "notebook",
+      "exit_code": 0,
+      "wall_seconds": 13.910699749016203
+    },
+    {
+      "name": "widgets",
+      "exit_code": 0,
+      "wall_seconds": 11.260931507975329
+    }
+  ],
+  "status": "passed",
+  "all_metric_rows": 39872,
+  "test_history_count": 24,
+  "replay_history": "test_20000",
+  "replay_curve_rows": 804,
+  "replay_missing_files": 0,
+  "final_pass_wall_seconds": 28.51459325000178,
+  "successful_step_wall_seconds": 50.50444707396673,
+  "tests_passed": 23,
+  "parent_commit": "1c14b1523a78472e7c0ab81bd29c5648a2fbe7b0",
+  "preserved_full_local_archive": true,
+  "source_sha256": {
+    "2D/src/nr2d/inference_display.py": "5fa896abd0449d74f34244958b63d3f1b0fb7e170f9c3d87e97e330239790a2a",
+    "2D/runs/inference/methods_20261030/metrics.csv": "6014b5eb6b78a21c8bfa7e08a2452bfd41b1fdce4b15f87e8a8d30d2b63e6963",
+    "2D/src/nr2d/learning_models.py": "0c181d29c4d6a928a265d909a205bba43518d59a055e5fd74d69c70eedf860c5",
+    "2D/src/nr2d/variational.py": "ad3ec8167fcd4369ff2b72314bc10fc4267b6fe6bf434c5c63cd9ef17ed4123d"
+  }
+}

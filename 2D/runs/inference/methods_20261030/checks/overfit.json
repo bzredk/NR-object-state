@@ -1,0 +1,33 @@
+{
+  "gru": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 96,
+    "constant_coefficient_baseline_mse": 0.011234351433813572,
+    "best_mse": 0.0005949099431745708,
+    "best_epoch": 179,
+    "wall_seconds": 9.068989108025562,
+    "ratio_to_constant": 0.052954542741469574
+  },
+  "rme": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 96,
+    "constant_coefficient_baseline_mse": 0.011234351433813572,
+    "best_mse": 0.000508632161654532,
+    "best_epoch": 198,
+    "wall_seconds": 19.402684172033332,
+    "ratio_to_constant": 0.04527472410411088
+  },
+  "mlp": {
+    "diagnostic_only": true,
+    "history_count": 4,
+    "example_count": 96,
+    "constant_coefficient_baseline_mse": 0.011234351433813572,
+    "best_mse": 0.0008619936998002231,
+    "best_epoch": 194,
+    "wall_seconds": 1.3492702650255524,
+    "ratio_to_constant": 0.07672839014148713,
+    "input_transformation": "First valid frame of every window; same complete window-start label set as GRU/RME"
+  }
+}
