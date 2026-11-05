@@ -2,6 +2,8 @@
 
 Checked on 2026-10-30. This is a primary-paper and released-code audit, not a reproduction of the original robot experiments. The adapted method is named **RME-inspired**.
 
+Follow-up review, 2026-11-04: the 200 ms estimation window excludes Appendix A's 500 ms force-history detector and 230 ms stabilization delay. The final paper also reports PVIK pick-and-place with SoftHand2 and OptiTrack in Appendix D, Figs. 9–10. [Comparison with recursive estimation](LITERATURE_REVIEW.md).
+
 ## Versions and evidence
 
 - Paper: Jaszczuk and Figueroa, *Rapid Mismatch Estimation via Neural Network Informed Variational Inference*, CoRL 2025, PMLR 305:5256-5277. [Proceedings](https://proceedings.mlr.press/v305/jaszczuk25a.html), [official PDF](https://raw.githubusercontent.com/mlresearch/v305/main/assets/jaszczuk25a/jaszczuk25a.pdf), [project](https://mateusz-jaszczuk.github.io/rme/).

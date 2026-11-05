@@ -1,6 +1,6 @@
 # Model and comparison
 
-[2D overview](../README.md) · [Experiment design](DESIGN.md) · [Method comparison](INFERENCE_STUDY.md) · [Parameters](CONFIGURATION.md)
+[2D overview](../README.md) · [Experiment design](DESIGN.md) · [Method comparison](INFERENCE_STUDY.md) · [Literature review](LITERATURE_REVIEW.md) · [Parameters](CONFIGURATION.md)
 
 ## Physical model
 
