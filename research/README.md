@@ -6,6 +6,7 @@ These documents contain state definitions, detailed literature audits and propos
 
 | Package | Purpose |
 | --- | --- |
+| [Nadia feedback, November 13](meetings/2026-11-13-nadia-feedback.zh-CN.md) | Video-timed board interpretation and proposed next steps; text-only Chinese notes |
 | [Hidden-state formulation](hidden_state_reframing/README.md) | Research question, two-framework mapping, evidence audit, literature and novelty boundaries |
 | [Original 2D protocol](2d_contact/README.md) | Initial mechanism and evaluation plan; completed studies are documented in `2D/` |
 | [Robot manipulation](robot_manipulation/README.md) | Full 3D robot simulation and subsequent hardware experiments |
