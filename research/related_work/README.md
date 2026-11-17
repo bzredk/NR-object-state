@@ -1,4 +1,4 @@
-# Papers
+# Related work
 
 [Research notes](../README.md)
 
