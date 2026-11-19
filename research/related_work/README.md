@@ -2,6 +2,8 @@
 
 [Research notes](../README.md)
 
+Published research papers. The [course project shared by Nadia](../course_projects/README.md) is listed separately.
+
 ## Rapid Mismatch Estimation
 
 Mateusz Jaszczuk and Nadia Figueroa. **Rapid Mismatch Estimation via Neural Network Informed Variational Inference.** Proceedings of the 9th Conference on Robot Learning, PMLR 305:5256–5277, 2025.
